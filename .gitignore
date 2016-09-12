@@ -1,3 +1,8 @@
+# IDEs
+.idea/
+
+secret.json
+
 # Logs
 logs
 *.log
