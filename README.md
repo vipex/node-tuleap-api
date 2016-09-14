@@ -1,7 +1,10 @@
 node-tuleap
 ===========
 
---
+[![Build Status (Travis)](https://travis-ci.org/vipex/node-tuleap-api.svg?branch=master)](https://travis-ci.org/vipex/node-tuleap-api)
+[![Code Climate](https://codeclimate.com/github/vipex/node-tuleap-api/badges/gpa.svg)](https://codeclimate.com/github/vipex/node-tuleap-api)
+
+---
 
 [Tuleap](https://www.tuleap.org/) API Nodejs library.
 It wraps the HTTP api library described [here](https://tuleap.net/api/explorer/).
