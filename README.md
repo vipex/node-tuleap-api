@@ -2,6 +2,7 @@ node-tuleap
 ===========
 
 [![Build Status (Travis)](https://travis-ci.org/vipex/node-tuleap-api.svg?branch=master)](https://travis-ci.org/vipex/node-tuleap-api)
+[![Dependency Status](https://david-dm.org/vipex/node-tuleap-api.png?theme=shields.io)](https://david-dm.org/vipex/node-tuleap-api)
 [![Code Climate](https://codeclimate.com/github/vipex/node-tuleap-api/badges/gpa.svg)](https://codeclimate.com/github/vipex/node-tuleap-api)
 
 ---
