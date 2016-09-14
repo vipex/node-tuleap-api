@@ -2,9 +2,9 @@
   "name": "tuleap-api",
   "version": "1.0.0",
   "description": "Unofficial Tuleap API NodeJs library.",
-  "main": "lib/index.js",
+  "main": "./lib/index.js",
   "scripts": {
-    "test": "node test/test.js"
+    "test": "./node_modules/.bin/mocha tests --recursive"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,9 @@
   "dependencies": {
     "debug": "^2.2.0",
     "request": "^2.74.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
   }
 }
