@@ -4,7 +4,8 @@
   "description": "Unofficial Tuleap API NodeJs library.",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha tests --recursive"
+    "test": "./node_modules/.bin/mocha tests --recursive",
+    "docs": "./node_modules/.bin/jsdoc lib -r -d docs"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "jsdoc": "^3.4.1",
     "mocha": "^3.0.2"
   }
 }

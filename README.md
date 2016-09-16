@@ -5,6 +5,7 @@ node-tuleap
 [![Dependency Status](https://david-dm.org/vipex/node-tuleap-api.png?theme=shields.io)](https://david-dm.org/vipex/node-tuleap-api)
 [![Code Climate](https://codeclimate.com/github/vipex/node-tuleap-api/badges/gpa.svg)](https://codeclimate.com/github/vipex/node-tuleap-api)
 
+[![NPM Badge](https://nodei.co/npm/tuleap-api.png?downloads=true&stars=true)](https://npmjs.org/package/tuleap-api)
 ---
 
 [Tuleap](https://www.tuleap.org/) API Nodejs library.
@@ -14,7 +15,10 @@ It wraps the HTTP api library described [here](https://tuleap.net/api/explorer/)
 Install
 =======
 
-[N/A]
+```bash
+# Install from npm
+npm install tuleap-api
+```
 
 Usage
 =====
