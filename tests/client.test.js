@@ -32,10 +32,13 @@ describe('Client init', function () {
 describe('Client functionality', function () {
 	var server, client;
 
-	before(function () { server = Mock.createBaseMock(); });
+	before(function () {
+		server = Mock.createBaseMock();
+		client = new Client(mData.config);
+	});
 
-	beforeEach(function () { client = new Client(mData.config); });
-	afterEach(function () { client = undefined; });
+	// beforeEach(function () { client = new Client(mData.config); return {}; });
+	after(function () { client = undefined; });
 
 	it('Expect get return empty object', function (done) {
 		client.get('/', {}, function (e, r, d) {
