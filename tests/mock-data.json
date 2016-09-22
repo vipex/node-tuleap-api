@@ -1,0 +1,8288 @@
+{
+	"config": {
+		"server": "http://localhost",
+		"username": "luca.ravizzotti",
+		"password": "suicide$kW4d",
+		"strictSSL": false,
+		"auth": {
+			"user_id": 102,
+			"token": "293a237c358354ea7d19d9fafd41c44c",
+			"uri": "tokens/293a237c358354ea7d19d9fafd41c44c"
+		}
+	},
+	"endpoints": {
+		"tokens": {
+			"POSTDATA": {
+				"username": "user2",
+				"password": "password2"
+			},
+			"token": {
+				"user_id": 102,
+				"token": "293a237c358354ea7d19d9fafd41c44c",
+				"uri": "tokens/293a237c358354ea7d19d9fafd41c44c"
+			},
+			"401": {
+				"error": {
+					"code": 401,
+					"message": "Unauthorized: Invalid Password Or User Name"
+				}
+			},
+			"400": {
+				"error": {
+					"code": 400,
+					"message": "Bad Request"
+				}
+			},
+			"500": {
+				"error": {
+					"code": 500,
+					"message": "Internal Server Error: Invalid Token"
+				}
+			}
+		},
+		"projects": {
+			"projects": [
+				{
+					"id": 101,
+					"uri": "projects/101",
+					"label": "Test Project 1",
+					"shortname": "test01",
+					"resources": [
+						{
+							"type": "trackers",
+							"uri": "projects/101/trackers"
+						},
+						{
+							"type": "backlog",
+							"uri": "projects/101/backlog"
+						},
+						{
+							"type": "milestones",
+							"uri": "projects/101/milestones"
+						},
+						{
+							"type": "plannings",
+							"uri": "projects/101/plannings"
+						},
+						{
+							"type": "git",
+							"uri": "projects/101/git"
+						},
+						{
+							"type": "user_groups",
+							"uri": "projects/101/user_groups"
+						},
+						{
+							"type": "phpwiki",
+							"uri": "projects/101/phpwiki"
+						}
+					],
+					"additional_informations": {
+						"agiledashboard": {
+							"root_planning": {
+								"id": 21,
+								"uri": "route-not-yet-implemented",
+								"label": "Sprint Planning",
+								"project": {
+									"id": 101,
+									"uri": "projects/101",
+									"label": null
+								},
+								"milestone_tracker": {
+									"id": 29,
+									"uri": "trackers/29",
+									"label": "Tasks"
+								},
+								"backlog_trackers": [
+									{
+										"id": 29,
+										"uri": "trackers/29"
+									}
+								],
+								"milestones_uri": "plannings/21/milestones"
+							}
+						}
+					}
+				},
+				{
+					"id": 102,
+					"uri": "projects/102",
+					"label": "Test Project 2",
+					"shortname": "test02",
+					"resources": [
+						{
+							"type": "trackers",
+							"uri": "projects/102/trackers"
+						},
+						{
+							"type": "backlog",
+							"uri": "projects/102/backlog"
+						},
+						{
+							"type": "milestones",
+							"uri": "projects/102/milestones"
+						},
+						{
+							"type": "plannings",
+							"uri": "projects/102/plannings"
+						},
+						{
+							"type": "git",
+							"uri": "projects/102/git"
+						},
+						{
+							"type": "user_groups",
+							"uri": "projects/102/user_groups"
+						},
+						{
+							"type": "phpwiki",
+							"uri": "projects/102/phpwiki"
+						}
+					],
+					"additional_informations": {
+						"agiledashboard": {
+							"root_planning": {
+								"id": 1,
+								"uri": "route-not-yet-implemented",
+								"label": "Planning 01",
+								"project": {
+									"id": 102,
+									"uri": "projects/102",
+									"label": null
+								},
+								"milestone_tracker": {
+									"id": 15,
+									"uri": "trackers/15",
+									"label": "Releases"
+								},
+								"backlog_trackers": [
+									{
+										"id": 13,
+										"uri": "trackers/13"
+									},
+									{
+										"id": 17,
+										"uri": "trackers/17"
+									},
+									{
+										"id": 39,
+										"uri": "trackers/39"
+									}
+								],
+								"milestones_uri": "plannings/1/milestones"
+							}
+						}
+					}
+				}
+			],
+			"projects/101": {
+				"id": 101,
+				"uri": "projects/101",
+				"label": "Test Project 1",
+				"shortname": "test01",
+				"resources": [
+					{
+						"type": "trackers",
+						"uri": "projects/101/trackers"
+					},
+					{
+						"type": "backlog",
+						"uri": "projects/101/backlog"
+					},
+					{
+						"type": "milestones",
+						"uri": "projects/101/milestones"
+					},
+					{
+						"type": "plannings",
+						"uri": "projects/101/plannings"
+					},
+					{
+						"type": "git",
+						"uri": "projects/101/git"
+					},
+					{
+						"type": "user_groups",
+						"uri": "projects/101/user_groups"
+					},
+					{
+						"type": "phpwiki",
+						"uri": "projects/101/phpwiki"
+					}
+				],
+				"additional_informations": {
+					"agiledashboard": {
+						"root_planning": {
+							"id": 21,
+							"uri": "route-not-yet-implemented",
+							"label": "Sprint Planning",
+							"project": {
+								"id": 101,
+								"uri": "projects/101",
+								"label": null
+							},
+							"milestone_tracker": {
+								"id": 29,
+								"uri": "trackers/29",
+								"label": "Tasks"
+							},
+							"backlog_trackers": [
+								{
+									"id": 29,
+									"uri": "trackers/29"
+								}
+							],
+							"milestones_uri": "plannings/21/milestones"
+						}
+					}
+				}
+			},
+			"projects/101/backlog": [
+				{
+					"id": 7,
+					"label": "Backlog 004",
+					"type": "Issues",
+					"short_type": "issues",
+					"status": "Open",
+					"color": "inca_silver",
+					"initial_effort": null,
+					"artifact": {
+						"id": 7,
+						"uri": "artifacts/7",
+						"tracker": {
+							"id": 13,
+							"uri": "trackers/13",
+							"label": "Issues"
+						}
+					},
+					"parent": null,
+					"project": {
+						"id": 102,
+						"uri": "projects/102",
+						"label": "Test Project 2"
+					},
+					"has_children": false,
+					"accept": {
+						"trackers": []
+					}
+				},
+				{
+					"id": 15,
+					"label": "Folders",
+					"type": "Requirements",
+					"short_type": "reqs",
+					"status": "Open",
+					"color": "plum_crazy",
+					"initial_effort": null,
+					"artifact": {
+						"id": 15,
+						"uri": "artifacts/15",
+						"tracker": {
+							"id": 39,
+							"uri": "trackers/39",
+							"label": "Requirements"
+						}
+					},
+					"parent": null,
+					"project": {
+						"id": 102,
+						"uri": "projects/102",
+						"label": "Test Project 2"
+					},
+					"has_children": false,
+					"accept": {
+						"trackers": []
+					}
+				}
+			],
+			"projects/101/trackers": [
+				{
+					"id": 12,
+					"uri": "trackers/12",
+					"html_url": "/plugins/tracker/?tracker=12",
+					"project": {
+						"id": 101,
+						"uri": "projects/101",
+						"label": "Test Project 1"
+					},
+					"label": "Bugs",
+					"description": "Bug tracking",
+					"item_name": "bug_track",
+					"fields": [
+						{
+							"field_id": 411,
+							"label": "Artifact ID",
+							"name": "artifact_id",
+							"type": "aid",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"is_time_displayed": true,
+							"field_id": 414,
+							"label": "Last Modified On",
+							"name": "last_update_date",
+							"type": "lud",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": "2016-09-19 14:39"
+						},
+						{
+							"field_id": 417,
+							"label": "Summary",
+							"name": "summary",
+							"type": "string",
+							"values": null,
+							"required": true,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": ""
+						},
+						{
+							"field_id": 420,
+							"label": "Severity",
+							"name": "severity",
+							"type": "sb",
+							"values": [
+								{
+									"id": 402,
+									"label": "1 - Ordinary",
+									"is_hidden": false
+								},
+								{
+									"id": 403,
+									"label": "2",
+									"is_hidden": false
+								},
+								{
+									"id": 404,
+									"label": "3",
+									"is_hidden": false
+								},
+								{
+									"id": 405,
+									"label": "4",
+									"is_hidden": false
+								},
+								{
+									"id": 406,
+									"label": "5 - Major",
+									"is_hidden": false
+								},
+								{
+									"id": 407,
+									"label": "6",
+									"is_hidden": false
+								},
+								{
+									"id": 408,
+									"label": "7",
+									"is_hidden": false
+								},
+								{
+									"id": 409,
+									"label": "8",
+									"is_hidden": false
+								},
+								{
+									"id": 410,
+									"label": "9 - Critical",
+									"is_hidden": false
+								}
+							],
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": "static",
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": []
+						},
+						{
+							"field_id": 422,
+							"label": "Category",
+							"name": "category",
+							"type": "sb",
+							"values": [
+								{
+									"id": 1316,
+									"label": "Parts",
+									"is_hidden": false
+								},
+								{
+									"id": 1317,
+									"label": "Serials",
+									"is_hidden": false
+								},
+								{
+									"id": 1318,
+									"label": "QAG",
+									"is_hidden": false
+								},
+								{
+									"id": 1319,
+									"label": "Backend",
+									"is_hidden": false
+								},
+								{
+									"id": 1320,
+									"label": "Interface",
+									"is_hidden": false
+								}
+							],
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": "static",
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": []
+						},
+						{
+							"field_id": 426,
+							"label": "Stage 1",
+							"name": "column3",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 427,
+							"label": "Status",
+							"name": "status_id",
+							"type": "sb",
+							"values": [
+								{
+									"id": 411,
+									"label": "New",
+									"is_hidden": false
+								},
+								{
+									"id": 412,
+									"label": "Unconfirmed",
+									"is_hidden": false
+								},
+								{
+									"id": 413,
+									"label": "Verified",
+									"is_hidden": false
+								},
+								{
+									"id": 414,
+									"label": "Resolved",
+									"is_hidden": false
+								},
+								{
+									"id": 415,
+									"label": "Closed",
+									"is_hidden": false
+								},
+								{
+									"id": 416,
+									"label": "Reopened",
+									"is_hidden": false
+								}
+							],
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": "static",
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": [
+								{
+									"id": 412,
+									"label": "Unconfirmed"
+								}
+							]
+						},
+						{
+							"field_id": 430,
+							"label": "Resolution",
+							"name": "resolution",
+							"type": "sb",
+							"values": [
+								{
+									"id": 427,
+									"label": "Fixed",
+									"is_hidden": false
+								},
+								{
+									"id": 428,
+									"label": "Will not fix",
+									"is_hidden": false
+								},
+								{
+									"id": 429,
+									"label": "Invalid",
+									"is_hidden": false
+								},
+								{
+									"id": 430,
+									"label": "Later",
+									"is_hidden": false
+								},
+								{
+									"id": 431,
+									"label": "Duplicate",
+									"is_hidden": false
+								},
+								{
+									"id": 432,
+									"label": "Remind",
+									"is_hidden": false
+								},
+								{
+									"id": 433,
+									"label": "Works for me",
+									"is_hidden": false
+								}
+							],
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": "static",
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": []
+						},
+						{
+							"field_id": 432,
+							"label": "Assigned to",
+							"name": "assigned_to",
+							"type": "sb",
+							"values": [
+								{
+									"id": 103,
+									"label": "user1",
+									"user_reference": {
+										"id": "103",
+										"uri": "users/103",
+										"real_name": "User1 (user1)",
+										"username": "user1"
+									}
+								},
+								{
+									"id": 114,
+									"label": "user3",
+									"user_reference": {
+										"id": "114",
+										"uri": "users/114",
+										"real_name": "User3 (user3)",
+										"username": "user3"
+									}
+								},
+								{
+									"id": 102,
+									"label": "user2",
+									"user_reference": {
+										"id": "102",
+										"uri": "users/102",
+										"real_name": "User2 (user2)",
+										"username": "user2"
+									}
+								},
+								{
+									"id": 112,
+									"label": "user4",
+									"user_reference": {
+										"id": "112",
+										"uri": "users/112",
+										"real_name": "User4 (user4)",
+										"username": "user4"
+									}
+								}
+							],
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": "users",
+								"list": [
+									{
+										"id": 3,
+										"label": "project_members"
+									}
+								]
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": []
+						},
+						{
+							"field_id": 434,
+							"label": "Attachments",
+							"name": "attachment",
+							"type": "file",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 436,
+							"label": "Cross references",
+							"name": "cross_references",
+							"type": "cross",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 439,
+							"label": "Permissions on artifact",
+							"name": "permissions_on_artifact",
+							"type": "perm",
+							"values": {
+								"is_used_by_default": false,
+								"ugroup_representations": [
+									{
+										"id": "1",
+										"uri": "user_groups/1",
+										"label": "Anonymous",
+										"users_uri": "user_groups/1/users",
+										"short_name": "all_users",
+										"key": "ugroup_anonymous_users_name_key"
+									},
+									{
+										"id": "2",
+										"uri": "user_groups/2",
+										"label": "Employee",
+										"users_uri": "user_groups/2/users",
+										"short_name": "registered_users",
+										"key": "ugroup_registered_users_name_key"
+									},
+									{
+										"id": "101_3",
+										"uri": "user_groups/101_3",
+										"label": "Project members",
+										"users_uri": "user_groups/101_3/users",
+										"short_name": "project_members",
+										"key": "ugroup_project_members_name_key"
+									},
+									{
+										"id": "101_4",
+										"uri": "user_groups/101_4",
+										"label": "Project administrators",
+										"users_uri": "user_groups/101_4/users",
+										"short_name": "project_admins",
+										"key": "ugroup_project_admins_name_key"
+									},
+									{
+										"id": "102",
+										"uri": "user_groups/102",
+										"label": "FRS_Admin",
+										"users_uri": "user_groups/102/users",
+										"short_name": "FRS_Admin",
+										"key": "FRS_Admin"
+									}
+								]
+							},
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 412,
+							"label": "Submitted by",
+							"name": "submitted_by",
+							"type": "subby",
+							"values": [
+								{
+									"id": 103,
+									"label": "user1",
+									"user_reference": {
+										"id": "103",
+										"uri": "users/103",
+										"real_name": "User1 (user1)",
+										"username": "user1"
+									}
+								},
+								{
+									"id": 111,
+									"label": "user5",
+									"user_reference": {
+										"id": "111",
+										"uri": "users/111",
+										"real_name": "User5 (user5)",
+										"username": "user5"
+									}
+								},
+								{
+									"id": 102,
+									"label": "user2",
+									"user_reference": {
+										"id": "102",
+										"uri": "users/102",
+										"real_name": "User2 (user2)",
+										"username": "user2"
+									}
+								},
+								{
+									"id": 112,
+									"label": "user4",
+									"user_reference": {
+										"id": "112",
+										"uri": "users/112",
+										"real_name": "User4 (user4)",
+										"username": "user4"
+									}
+								}
+							],
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": "users",
+								"list": [
+									{
+										"id": 0,
+										"label": "artifact_submitters"
+									}
+								]
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": []
+						},
+						{
+							"is_time_displayed": true,
+							"field_id": 415,
+							"label": "Submitted on",
+							"name": "open_date",
+							"type": "subon",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": "2016-09-19 14:39"
+						},
+						{
+							"field_id": 429,
+							"label": "Stage 2",
+							"name": "column4",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 431,
+							"label": "Stage 3",
+							"name": "column9",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 410,
+							"label": "Column Top 1",
+							"name": "column8",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 418,
+							"label": "Original Submission",
+							"name": "details",
+							"type": "text",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": {
+								"format": "text",
+								"content": ""
+							}
+						},
+						{
+							"field_id": 419,
+							"label": "Column Details 1",
+							"name": "column10_1",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 421,
+							"label": "Column Details 2",
+							"name": "column10_11",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 413,
+							"label": "Column Top 2",
+							"name": "column10",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 416,
+							"label": "Details",
+							"name": "fieldset_1",
+							"type": "fieldset",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 425,
+							"label": "Stage",
+							"name": "fieldset1",
+							"type": "fieldset",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 433,
+							"label": "Attachments",
+							"name": "fieldset1_1",
+							"type": "fieldset",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 435,
+							"label": "References",
+							"name": "fieldset1_11",
+							"type": "fieldset",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 438,
+							"label": "Permissions",
+							"name": "fieldset1_111",
+							"type": "fieldset",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						}
+					],
+					"structure": [
+						{
+							"id": 410,
+							"content": [
+								{
+									"id": 411,
+									"content": null
+								},
+								{
+									"id": 412,
+									"content": null
+								}
+							]
+						},
+						{
+							"id": 413,
+							"content": [
+								{
+									"id": 414,
+									"content": null
+								},
+								{
+									"id": 415,
+									"content": null
+								}
+							]
+						},
+						{
+							"id": 416,
+							"content": [
+								{
+									"id": 417,
+									"content": null
+								},
+								{
+									"id": 418,
+									"content": null
+								},
+								{
+									"id": 419,
+									"content": [
+										{
+											"id": 420,
+											"content": null
+										}
+									]
+								},
+								{
+									"id": 421,
+									"content": [
+										{
+											"id": 422,
+											"content": null
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": 425,
+							"content": [
+								{
+									"id": 426,
+									"content": [
+										{
+											"id": 427,
+											"content": null
+										}
+									]
+								},
+								{
+									"id": 429,
+									"content": [
+										{
+											"id": 430,
+											"content": null
+										}
+									]
+								},
+								{
+									"id": 431,
+									"content": [
+										{
+											"id": 432,
+											"content": null
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": 433,
+							"content": [
+								{
+									"id": 434,
+									"content": null
+								}
+							]
+						},
+						{
+							"id": 435,
+							"content": [
+								{
+									"id": 436,
+									"content": null
+								}
+							]
+						},
+						{
+							"id": 438,
+							"content": [
+								{
+									"id": 439,
+									"content": null
+								}
+							]
+						}
+					],
+					"semantics": {
+						"title": {
+							"field_id": 417
+						},
+						"status": {
+							"field_id": 427,
+							"value_ids": [
+								411,
+								412,
+								413,
+								414,
+								416
+							]
+						},
+						"contributor": {
+							"field_id": 432
+						}
+					},
+					"workflow": {
+						"field_id": 427,
+						"is_used": "0",
+						"rules": {
+							"dates": [],
+							"lists": []
+						},
+						"transitions": [
+							{
+								"from_id": null,
+								"to_id": 411
+							},
+							{
+								"from_id": 411,
+								"to_id": 412
+							},
+							{
+								"from_id": 411,
+								"to_id": 413
+							},
+							{
+								"from_id": 411,
+								"to_id": 415
+							},
+							{
+								"from_id": 412,
+								"to_id": 413
+							},
+							{
+								"from_id": 412,
+								"to_id": 415
+							},
+							{
+								"from_id": 414,
+								"to_id": 415
+							},
+							{
+								"from_id": 415,
+								"to_id": 416
+							},
+							{
+								"from_id": 416,
+								"to_id": 414
+							},
+							{
+								"from_id": 416,
+								"to_id": 415
+							},
+							{
+								"from_id": 411,
+								"to_id": 414
+							},
+							{
+								"from_id": 412,
+								"to_id": 414
+							},
+							{
+								"from_id": 413,
+								"to_id": 414
+							},
+							{
+								"from_id": 413,
+								"to_id": 415
+							}
+						]
+					},
+					"parent": null,
+					"resources": [
+						{
+							"type": "reports",
+							"uri": "trackers/12/tracker_reports"
+						}
+					],
+					"color_name": "inca_silver"
+				},
+				{
+					"id": 29,
+					"uri": "trackers/29",
+					"html_url": "/plugins/tracker/?tracker=29",
+					"project": {
+						"id": 101,
+						"uri": "projects/101",
+						"label": "Test Project 1"
+					},
+					"label": "Tasks",
+					"description": "task",
+					"item_name": "task",
+					"fields": [
+						{
+							"field_id": 845,
+							"label": "N°",
+							"name": "number",
+							"type": "aid",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"is_time_displayed": true,
+							"field_id": 848,
+							"label": "Last Modified On",
+							"name": "last_update_date",
+							"type": "lud",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": "2016-09-19 14:39"
+						},
+						{
+							"field_id": 851,
+							"label": "Task Description",
+							"name": "description",
+							"type": "string",
+							"values": null,
+							"required": true,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": ""
+						},
+						{
+							"field_id": 854,
+							"label": "Column Progress 1",
+							"name": "column5",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"is_time_displayed": false,
+							"field_id": 855,
+							"label": "Start Date",
+							"name": "start_date",
+							"type": "date",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": "2016-09-19"
+						},
+						{
+							"is_time_displayed": false,
+							"field_id": 858,
+							"label": "Due Date",
+							"name": "due_date",
+							"type": "date",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": ""
+						},
+						{
+							"is_time_displayed": false,
+							"field_id": 861,
+							"label": "End Date",
+							"name": "end_date",
+							"type": "date",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": ""
+						},
+						{
+							"field_id": 864,
+							"label": "Cross references",
+							"name": "cross_references",
+							"type": "cross",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"is_time_displayed": true,
+							"field_id": 849,
+							"label": "Submitted on",
+							"name": "open_date",
+							"type": "subon",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": "2016-09-19 14:39"
+						},
+						{
+							"field_id": 852,
+							"label": "Details",
+							"name": "details",
+							"type": "text",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": {
+								"format": "text",
+								"content": ""
+							}
+						},
+						{
+							"field_id": 856,
+							"label": "Remaining Effort (Hours)",
+							"name": "remaining_effort",
+							"type": "float",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 862,
+							"label": "Status",
+							"name": "status_id",
+							"type": "sb",
+							"values": [
+								{
+									"id": 780,
+									"label": "Open",
+									"is_hidden": true
+								},
+								{
+									"id": 781,
+									"label": "Closed",
+									"is_hidden": true
+								},
+								{
+									"id": 782,
+									"label": "Todo",
+									"is_hidden": false
+								},
+								{
+									"id": 783,
+									"label": "On Going",
+									"is_hidden": false
+								},
+								{
+									"id": 784,
+									"label": "Review",
+									"is_hidden": false
+								},
+								{
+									"id": 785,
+									"label": "Done",
+									"is_hidden": false
+								}
+							],
+							"required": true,
+							"collapsed": false,
+							"bindings": {
+								"type": "static",
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": []
+						},
+						{
+							"field_id": 859,
+							"label": "Assigned to",
+							"name": "assigned_to",
+							"type": "sb",
+							"values": [
+								{
+									"id": 103,
+									"label": "user1",
+									"user_reference": {
+										"id": "103",
+										"uri": "users/103",
+										"real_name": "User1 (user1)",
+										"username": "user1"
+									}
+								},
+								{
+									"id": 114,
+									"label": "user3",
+									"user_reference": {
+										"id": "114",
+										"uri": "users/114",
+										"real_name": "User3 (user3)",
+										"username": "user3"
+									}
+								},
+								{
+									"id": 102,
+									"label": "user2",
+									"user_reference": {
+										"id": "102",
+										"uri": "users/102",
+										"real_name": "User2 (user2)",
+										"username": "user2"
+									}
+								},
+								{
+									"id": 112,
+									"label": "user4",
+									"user_reference": {
+										"id": "112",
+										"uri": "users/112",
+										"real_name": "User4 (user4)",
+										"username": "user4"
+									}
+								}
+							],
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": "users",
+								"list": [
+									{
+										"id": 3,
+										"label": "project_members"
+									}
+								]
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": []
+						},
+						{
+							"field_id": 1903,
+							"label": "Attachments",
+							"name": "attachments",
+							"type": "file",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 846,
+							"label": "Submitted by",
+							"name": "submitted_by",
+							"type": "subby",
+							"values": [
+								{
+									"id": 103,
+									"label": "user1",
+									"user_reference": {
+										"id": "103",
+										"uri": "users/103",
+										"real_name": "User1 (user1)",
+										"username": "user1"
+									}
+								},
+								{
+									"id": 102,
+									"label": "user2",
+									"user_reference": {
+										"id": "102",
+										"uri": "users/102",
+										"real_name": "User2 (user2)",
+										"username": "user2"
+									}
+								},
+								{
+									"id": 112,
+									"label": "user4",
+									"user_reference": {
+										"id": "112",
+										"uri": "users/112",
+										"real_name": "User4 (user4)",
+										"username": "user4"
+									}
+								}
+							],
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": "users",
+								"list": [
+									{
+										"id": 0,
+										"label": "artifact_submitters"
+									}
+								]
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": []
+						},
+						{
+							"field_id": 857,
+							"label": "Column Progress 2",
+							"name": "column6",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 860,
+							"label": "Column Progress 3",
+							"name": "column7",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 844,
+							"label": "Column Top 1",
+							"name": "column1",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 847,
+							"label": "Column Top 2",
+							"name": "column2",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 850,
+							"label": "Details",
+							"name": "fieldset_1",
+							"type": "fieldset",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 853,
+							"label": "State of Progress",
+							"name": "fieldset_2",
+							"type": "fieldset",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 863,
+							"label": "References",
+							"name": "fieldset1_1",
+							"type": "fieldset",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						}
+					],
+					"structure": [
+						{
+							"id": 844,
+							"content": [
+								{
+									"id": 845,
+									"content": null
+								},
+								{
+									"id": 846,
+									"content": null
+								}
+							]
+						},
+						{
+							"id": 847,
+							"content": [
+								{
+									"id": 848,
+									"content": null
+								},
+								{
+									"id": 849,
+									"content": null
+								}
+							]
+						},
+						{
+							"id": 850,
+							"content": [
+								{
+									"id": 851,
+									"content": null
+								},
+								{
+									"id": 852,
+									"content": null
+								},
+								{
+									"id": 1903,
+									"content": null
+								}
+							]
+						},
+						{
+							"id": 853,
+							"content": [
+								{
+									"id": 854,
+									"content": [
+										{
+											"id": 855,
+											"content": null
+										},
+										{
+											"id": 856,
+											"content": null
+										}
+									]
+								},
+								{
+									"id": 857,
+									"content": [
+										{
+											"id": 858,
+											"content": null
+										},
+										{
+											"id": 859,
+											"content": null
+										}
+									]
+								},
+								{
+									"id": 860,
+									"content": [
+										{
+											"id": 861,
+											"content": null
+										},
+										{
+											"id": 862,
+											"content": null
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": 863,
+							"content": [
+								{
+									"id": 864,
+									"content": null
+								}
+							]
+						}
+					],
+					"semantics": {
+						"title": {
+							"field_id": 851
+						},
+						"status": {
+							"field_id": 862,
+							"value_ids": [
+								782,
+								783,
+								784
+							]
+						},
+						"contributor": {
+							"field_id": 859
+						}
+					},
+					"workflow": {
+						"field_id": 862,
+						"is_used": "0",
+						"rules": {
+							"dates": [],
+							"lists": []
+						},
+						"transitions": [
+							{
+								"from_id": null,
+								"to_id": 782
+							},
+							{
+								"from_id": null,
+								"to_id": 783
+							},
+							{
+								"from_id": null,
+								"to_id": 784
+							},
+							{
+								"from_id": null,
+								"to_id": 785
+							},
+							{
+								"from_id": 782,
+								"to_id": 783
+							},
+							{
+								"from_id": 782,
+								"to_id": 784
+							},
+							{
+								"from_id": 782,
+								"to_id": 785
+							},
+							{
+								"from_id": 783,
+								"to_id": 782
+							},
+							{
+								"from_id": 783,
+								"to_id": 784
+							},
+							{
+								"from_id": 783,
+								"to_id": 785
+							},
+							{
+								"from_id": 784,
+								"to_id": 782
+							},
+							{
+								"from_id": 784,
+								"to_id": 783
+							},
+							{
+								"from_id": 784,
+								"to_id": 785
+							},
+							{
+								"from_id": 785,
+								"to_id": 782
+							},
+							{
+								"from_id": 785,
+								"to_id": 783
+							},
+							{
+								"from_id": 785,
+								"to_id": 784
+							}
+						]
+					},
+					"parent": null,
+					"resources": [
+						{
+							"type": "reports",
+							"uri": "trackers/29/tracker_reports"
+						}
+					],
+					"color_name": "daphne_blue"
+				}
+			],
+			"projects/102": {
+				"id": 102,
+				"uri": "projects/102",
+				"label": "Test Project 2",
+				"shortname": "test02",
+				"resources": [
+					{
+						"type": "trackers",
+						"uri": "projects/102/trackers"
+					},
+					{
+						"type": "backlog",
+						"uri": "projects/102/backlog"
+					},
+					{
+						"type": "milestones",
+						"uri": "projects/102/milestones"
+					},
+					{
+						"type": "plannings",
+						"uri": "projects/102/plannings"
+					},
+					{
+						"type": "git",
+						"uri": "projects/102/git"
+					},
+					{
+						"type": "user_groups",
+						"uri": "projects/102/user_groups"
+					},
+					{
+						"type": "phpwiki",
+						"uri": "projects/102/phpwiki"
+					}
+				],
+				"additional_informations": {
+					"agiledashboard": {
+						"root_planning": {
+							"id": 1,
+							"uri": "route-not-yet-implemented",
+							"label": "Planning 01",
+							"project": {
+								"id": 102,
+								"uri": "projects/102",
+								"label": null
+							},
+							"milestone_tracker": {
+								"id": 15,
+								"uri": "trackers/15",
+								"label": "Releases"
+							},
+							"backlog_trackers": [
+								{
+									"id": 13,
+									"uri": "trackers/13"
+								},
+								{
+									"id": 17,
+									"uri": "trackers/17"
+								},
+								{
+									"id": 39,
+									"uri": "trackers/39"
+								}
+							],
+							"milestones_uri": "plannings/1/milestones"
+						}
+					}
+				}
+			},
+			"projects/102/backlog": [
+				{
+					"id": 7,
+					"label": "Backlog 004",
+					"type": "Issues",
+					"short_type": "issues",
+					"status": "Open",
+					"color": "inca_silver",
+					"initial_effort": null,
+					"artifact": {
+						"id": 7,
+						"uri": "artifacts/7",
+						"tracker": {
+							"id": 13,
+							"uri": "trackers/13",
+							"label": "Issues"
+						}
+					},
+					"parent": null,
+					"project": {
+						"id": 102,
+						"uri": "projects/102",
+						"label": "Test Project 2"
+					},
+					"has_children": false,
+					"accept": {
+						"trackers": []
+					}
+				},
+				{
+					"id": 15,
+					"label": "Folders",
+					"type": "Requirements",
+					"short_type": "reqs",
+					"status": "Open",
+					"color": "plum_crazy",
+					"initial_effort": null,
+					"artifact": {
+						"id": 15,
+						"uri": "artifacts/15",
+						"tracker": {
+							"id": 39,
+							"uri": "trackers/39",
+							"label": "Requirements"
+						}
+					},
+					"parent": null,
+					"project": {
+						"id": 102,
+						"uri": "projects/102",
+						"label": "Test Project 2"
+					},
+					"has_children": false,
+					"accept": {
+						"trackers": []
+					}
+				}
+			],
+			"projects/102/trackers": [
+				{
+					"id": 13,
+					"uri": "trackers/13",
+					"html_url": "/plugins/tracker/?tracker=13",
+					"project": {
+						"id": 102,
+						"uri": "projects/102",
+						"label": "Test Project 2"
+					},
+					"label": "Issues",
+					"description": "Project issues.",
+					"item_name": "issues",
+					"fields": [
+						{
+							"field_id": 457,
+							"label": "Artifact ID",
+							"name": "artifact_id",
+							"type": "aid",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"is_time_displayed": true,
+							"field_id": 459,
+							"label": "Last Modified On",
+							"name": "last_update_date",
+							"type": "lud",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": "2016-09-19 14:49"
+						},
+						{
+							"field_id": 461,
+							"label": "Summary",
+							"name": "summary",
+							"type": "string",
+							"values": null,
+							"required": true,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": ""
+						},
+						{
+							"field_id": 467,
+							"label": "Severity",
+							"name": "severity",
+							"type": "sb",
+							"values": [
+								{
+									"id": 454,
+									"label": "1 - Ordinary",
+									"is_hidden": false
+								},
+								{
+									"id": 455,
+									"label": "2",
+									"is_hidden": false
+								},
+								{
+									"id": 456,
+									"label": "3",
+									"is_hidden": false
+								},
+								{
+									"id": 457,
+									"label": "4",
+									"is_hidden": false
+								},
+								{
+									"id": 458,
+									"label": "5 - Major",
+									"is_hidden": false
+								},
+								{
+									"id": 459,
+									"label": "6",
+									"is_hidden": false
+								},
+								{
+									"id": 460,
+									"label": "7",
+									"is_hidden": false
+								},
+								{
+									"id": 461,
+									"label": "8",
+									"is_hidden": false
+								},
+								{
+									"id": 462,
+									"label": "9 - Critical",
+									"is_hidden": false
+								}
+							],
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": "static",
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": []
+						},
+						{
+							"field_id": 468,
+							"label": "Category",
+							"name": "category",
+							"type": "sb",
+							"values": [
+								{
+									"id": 598,
+									"label": "Bug",
+									"is_hidden": false
+								},
+								{
+									"id": 599,
+									"label": "Enhancement",
+									"is_hidden": false
+								},
+								{
+									"id": 600,
+									"label": "Activity",
+									"is_hidden": false
+								}
+							],
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": "static",
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": [
+								{
+									"id": 598,
+									"label": "Bug"
+								}
+							]
+						},
+						{
+							"field_id": 469,
+							"label": "Stage 1",
+							"name": "column3",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 472,
+							"label": "Status",
+							"name": "status_id",
+							"type": "sb",
+							"values": [
+								{
+									"id": 463,
+									"label": "New",
+									"is_hidden": false
+								},
+								{
+									"id": 464,
+									"label": "Unconfirmed",
+									"is_hidden": false
+								},
+								{
+									"id": 465,
+									"label": "Verified",
+									"is_hidden": false
+								},
+								{
+									"id": 466,
+									"label": "Resolved",
+									"is_hidden": false
+								},
+								{
+									"id": 467,
+									"label": "Closed",
+									"is_hidden": false
+								},
+								{
+									"id": 468,
+									"label": "Reopened",
+									"is_hidden": false
+								}
+							],
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": "static",
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": []
+						},
+						{
+							"field_id": 474,
+							"label": "Resolution",
+							"name": "resolution",
+							"type": "sb",
+							"values": [
+								{
+									"id": 479,
+									"label": "Fixed",
+									"is_hidden": false
+								},
+								{
+									"id": 1000,
+									"label": "In Progess",
+									"is_hidden": false
+								},
+								{
+									"id": 480,
+									"label": "Will not fix",
+									"is_hidden": false
+								},
+								{
+									"id": 481,
+									"label": "Invalid",
+									"is_hidden": false
+								},
+								{
+									"id": 482,
+									"label": "Later",
+									"is_hidden": false
+								},
+								{
+									"id": 483,
+									"label": "Duplicate",
+									"is_hidden": false
+								},
+								{
+									"id": 484,
+									"label": "Remind",
+									"is_hidden": false
+								},
+								{
+									"id": 485,
+									"label": "Works for me",
+									"is_hidden": false
+								},
+								{
+									"id": 1170,
+									"label": "To be tested",
+									"is_hidden": false
+								}
+							],
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": "static",
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": []
+						},
+						{
+							"field_id": 475,
+							"label": "Assigned to",
+							"name": "assigned_to",
+							"type": "sb",
+							"values": [
+								{
+									"id": 109,
+									"label": "user6",
+									"user_reference": {
+										"id": "109",
+										"uri": "users/109",
+										"real_name": "User6 (user6)",
+										"username": "user6"
+									}
+								},
+								{
+									"id": 107,
+									"label": "user7",
+									"user_reference": {
+										"id": "107",
+										"uri": "users/107",
+										"real_name": "User7 (user7)",
+										"username": "user7"
+									}
+								},
+								{
+									"id": 108,
+									"label": "user8",
+									"user_reference": {
+										"id": "108",
+										"uri": "users/108",
+										"real_name": "User8 (user8)",
+										"username": "user8"
+									}
+								},
+								{
+									"id": 105,
+									"label": "user9",
+									"user_reference": {
+										"id": "105",
+										"uri": "users/105",
+										"real_name": "User9 (user9)",
+										"username": "user9"
+									}
+								},
+								{
+									"id": 104,
+									"label": "user10",
+									"user_reference": {
+										"id": "104",
+										"uri": "users/104",
+										"real_name": "User10 (user10)",
+										"username": "user10"
+									}
+								}
+							],
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": "users",
+								"list": [
+									{
+										"id": 3,
+										"label": "project_members"
+									}
+								]
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": []
+						},
+						{
+							"field_id": 476,
+							"label": "Attachments",
+							"name": "attachment",
+							"type": "file",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 477,
+							"label": "Cross references",
+							"name": "cross_references",
+							"type": "cross",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 479,
+							"label": "Permissions on artifact",
+							"name": "permissions_on_artifact",
+							"type": "perm",
+							"values": {
+								"is_used_by_default": false,
+								"ugroup_representations": [
+									{
+										"id": "1",
+										"uri": "user_groups/1",
+										"label": "Anonymous",
+										"users_uri": "user_groups/1/users",
+										"short_name": "all_users",
+										"key": "ugroup_anonymous_users_name_key"
+									},
+									{
+										"id": "2",
+										"uri": "user_groups/2",
+										"label": "Employee",
+										"users_uri": "user_groups/2/users",
+										"short_name": "registered_users",
+										"key": "ugroup_registered_users_name_key"
+									},
+									{
+										"id": "102_3",
+										"uri": "user_groups/102_3",
+										"label": "Project members",
+										"users_uri": "user_groups/102_3/users",
+										"short_name": "project_members",
+										"key": "ugroup_project_members_name_key"
+									},
+									{
+										"id": "102_4",
+										"uri": "user_groups/102_4",
+										"label": "Project administrators",
+										"users_uri": "user_groups/102_4/users",
+										"short_name": "project_admins",
+										"key": "ugroup_project_admins_name_key"
+									},
+									{
+										"id": "103",
+										"uri": "user_groups/103",
+										"label": "FRS_Admin",
+										"users_uri": "user_groups/103/users",
+										"short_name": "FRS_Admin",
+										"key": "FRS_Admin"
+									}
+								]
+							},
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 458,
+							"label": "Submitted by",
+							"name": "submitted_by",
+							"type": "subby",
+							"values": [
+								{
+									"id": 105,
+									"label": "user9",
+									"user_reference": {
+										"id": "105",
+										"uri": "users/105",
+										"real_name": "User9 (user9)",
+										"username": "user9"
+									}
+								}
+							],
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": "users",
+								"list": [
+									{
+										"id": 0,
+										"label": "artifact_submitters"
+									}
+								]
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": []
+						},
+						{
+							"is_time_displayed": true,
+							"field_id": 460,
+							"label": "Submitted on",
+							"name": "open_date",
+							"type": "subon",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": "2016-09-19 14:49"
+						},
+						{
+							"field_id": 470,
+							"label": "Stage 2",
+							"name": "column4",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 471,
+							"label": "Stage 3",
+							"name": "column9",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 462,
+							"label": "Original Submission",
+							"name": "details",
+							"type": "text",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": {
+								"format": "text",
+								"content": ""
+							}
+						},
+						{
+							"field_id": 463,
+							"label": "Column Details 1",
+							"name": "column10_1",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 447,
+							"label": "Column Top 1",
+							"name": "column8",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 464,
+							"label": "Column Details 2",
+							"name": "column10_11",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 451,
+							"label": "Column Top 2",
+							"name": "column10",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 452,
+							"label": "Details",
+							"name": "fieldset_1",
+							"type": "fieldset",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 453,
+							"label": "Stage",
+							"name": "fieldset1",
+							"type": "fieldset",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 454,
+							"label": "Attachments",
+							"name": "fieldset1_1",
+							"type": "fieldset",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 455,
+							"label": "References",
+							"name": "fieldset1_11",
+							"type": "fieldset",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 456,
+							"label": "Permissions",
+							"name": "fieldset1_111",
+							"type": "fieldset",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						}
+					],
+					"structure": [
+						{
+							"id": 447,
+							"content": [
+								{
+									"id": 457,
+									"content": null
+								},
+								{
+									"id": 458,
+									"content": null
+								}
+							]
+						},
+						{
+							"id": 451,
+							"content": [
+								{
+									"id": 459,
+									"content": null
+								},
+								{
+									"id": 460,
+									"content": null
+								}
+							]
+						},
+						{
+							"id": 452,
+							"content": [
+								{
+									"id": 461,
+									"content": null
+								},
+								{
+									"id": 462,
+									"content": null
+								},
+								{
+									"id": 463,
+									"content": [
+										{
+											"id": 467,
+											"content": null
+										}
+									]
+								},
+								{
+									"id": 464,
+									"content": [
+										{
+											"id": 468,
+											"content": null
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": 453,
+							"content": [
+								{
+									"id": 469,
+									"content": [
+										{
+											"id": 472,
+											"content": null
+										}
+									]
+								},
+								{
+									"id": 470,
+									"content": [
+										{
+											"id": 474,
+											"content": null
+										}
+									]
+								},
+								{
+									"id": 471,
+									"content": [
+										{
+											"id": 475,
+											"content": null
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": 454,
+							"content": [
+								{
+									"id": 476,
+									"content": null
+								}
+							]
+						},
+						{
+							"id": 455,
+							"content": [
+								{
+									"id": 477,
+									"content": null
+								}
+							]
+						},
+						{
+							"id": 456,
+							"content": [
+								{
+									"id": 479,
+									"content": null
+								}
+							]
+						}
+					],
+					"semantics": {
+						"title": {
+							"field_id": 461
+						},
+						"status": {
+							"field_id": 472,
+							"value_ids": [
+								463,
+								464,
+								465,
+								466,
+								468
+							]
+						},
+						"contributor": {
+							"field_id": 475
+						},
+						"initial_effort": {
+							"field_id": 468
+						}
+					},
+					"workflow": {
+						"field_id": 472,
+						"is_used": "1",
+						"rules": {
+							"dates": [],
+							"lists": []
+						},
+						"transitions": [
+							{
+								"from_id": null,
+								"to_id": 463
+							},
+							{
+								"from_id": 463,
+								"to_id": 464
+							},
+							{
+								"from_id": 463,
+								"to_id": 465
+							},
+							{
+								"from_id": 463,
+								"to_id": 467
+							},
+							{
+								"from_id": 464,
+								"to_id": 465
+							},
+							{
+								"from_id": 464,
+								"to_id": 467
+							},
+							{
+								"from_id": 466,
+								"to_id": 467
+							},
+							{
+								"from_id": 467,
+								"to_id": 468
+							},
+							{
+								"from_id": 468,
+								"to_id": 466
+							},
+							{
+								"from_id": 468,
+								"to_id": 467
+							},
+							{
+								"from_id": 463,
+								"to_id": 466
+							},
+							{
+								"from_id": 464,
+								"to_id": 466
+							},
+							{
+								"from_id": 465,
+								"to_id": 466
+							},
+							{
+								"from_id": 465,
+								"to_id": 467
+							},
+							{
+								"from_id": 466,
+								"to_id": 468
+							}
+						]
+					},
+					"parent": null,
+					"resources": [
+						{
+							"type": "reports",
+							"uri": "trackers/13/tracker_reports"
+						}
+					],
+					"color_name": "inca_silver"
+				},
+				{
+					"id": 17,
+					"uri": "trackers/17",
+					"html_url": "/plugins/tracker/?tracker=17",
+					"project": {
+						"id": 102,
+						"uri": "projects/102",
+						"label": "Test Project 2"
+					},
+					"label": "Tasks",
+					"description": "task",
+					"item_name": "task",
+					"fields": [
+						{
+							"field_id": 539,
+							"label": "N°",
+							"name": "number",
+							"type": "aid",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"is_time_displayed": true,
+							"field_id": 542,
+							"label": "Last Modified On",
+							"name": "last_update_date",
+							"type": "lud",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": "2016-09-19 14:49"
+						},
+						{
+							"field_id": 545,
+							"label": "Task Description",
+							"name": "description",
+							"type": "string",
+							"values": null,
+							"required": true,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": ""
+						},
+						{
+							"field_id": 548,
+							"label": "Column Progress 1",
+							"name": "column5",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"is_time_displayed": false,
+							"field_id": 549,
+							"label": "Start Date",
+							"name": "start_date",
+							"type": "date",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": "2016-09-19"
+						},
+						{
+							"is_time_displayed": false,
+							"field_id": 552,
+							"label": "Due Date",
+							"name": "due_date",
+							"type": "date",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": ""
+						},
+						{
+							"is_time_displayed": false,
+							"field_id": 555,
+							"label": "End Date",
+							"name": "end_date",
+							"type": "date",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": ""
+						},
+						{
+							"field_id": 558,
+							"label": "Cross references",
+							"name": "cross_references",
+							"type": "cross",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"is_time_displayed": true,
+							"field_id": 543,
+							"label": "Submitted on",
+							"name": "open_date",
+							"type": "subon",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": "2016-09-19 14:49"
+						},
+						{
+							"field_id": 546,
+							"label": "Details",
+							"name": "details",
+							"type": "text",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": {
+								"format": "text",
+								"content": ""
+							}
+						},
+						{
+							"field_id": 550,
+							"label": "Remaining Effort (Hours)",
+							"name": "remaining_effort",
+							"type": "float",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 556,
+							"label": "Status",
+							"name": "status_id",
+							"type": "sb",
+							"values": [
+								{
+									"id": 551,
+									"label": "Open",
+									"is_hidden": true
+								},
+								{
+									"id": 552,
+									"label": "Closed",
+									"is_hidden": true
+								},
+								{
+									"id": 553,
+									"label": "Todo",
+									"is_hidden": false
+								},
+								{
+									"id": 554,
+									"label": "On Going",
+									"is_hidden": false
+								},
+								{
+									"id": 555,
+									"label": "Review",
+									"is_hidden": false
+								},
+								{
+									"id": 556,
+									"label": "Done",
+									"is_hidden": false
+								}
+							],
+							"required": true,
+							"collapsed": false,
+							"bindings": {
+								"type": "static",
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": []
+						},
+						{
+							"field_id": 553,
+							"label": "Assigned to",
+							"name": "assigned_to",
+							"type": "sb",
+							"values": [
+								{
+									"id": 109,
+									"label": "user6",
+									"user_reference": {
+										"id": "109",
+										"uri": "users/109",
+										"real_name": "User6 (user6)",
+										"username": "user6"
+									}
+								},
+								{
+									"id": 107,
+									"label": "user7",
+									"user_reference": {
+										"id": "107",
+										"uri": "users/107",
+										"real_name": "User7 (user7)",
+										"username": "user7"
+									}
+								},
+								{
+									"id": 108,
+									"label": "user8",
+									"user_reference": {
+										"id": "108",
+										"uri": "users/108",
+										"real_name": "User8 (user8)",
+										"username": "user8"
+									}
+								},
+								{
+									"id": 105,
+									"label": "user9",
+									"user_reference": {
+										"id": "105",
+										"uri": "users/105",
+										"real_name": "User9 (user9)",
+										"username": "user9"
+									}
+								},
+								{
+									"id": 104,
+									"label": "user10",
+									"user_reference": {
+										"id": "104",
+										"uri": "users/104",
+										"real_name": "User10 (user10)",
+										"username": "user10"
+									}
+								}
+							],
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": "users",
+								"list": [
+									{
+										"id": 3,
+										"label": "project_members"
+									}
+								]
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": []
+						},
+						{
+							"field_id": 540,
+							"label": "Submitted by",
+							"name": "submitted_by",
+							"type": "subby",
+							"values": [
+								{
+									"id": 105,
+									"label": "user9",
+									"user_reference": {
+										"id": "105",
+										"uri": "users/105",
+										"real_name": "User9 (user9)",
+										"username": "user9"
+									}
+								}
+							],
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": "users",
+								"list": [
+									{
+										"id": 0,
+										"label": "artifact_submitters"
+									}
+								]
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": []
+						},
+						{
+							"field_id": 551,
+							"label": "Column Progress 2",
+							"name": "column6",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 554,
+							"label": "Column Progress 3",
+							"name": "column7",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 538,
+							"label": "Column Top 1",
+							"name": "column1",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 541,
+							"label": "Column Top 2",
+							"name": "column2",
+							"type": "column",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 544,
+							"label": "Details",
+							"name": "fieldset_1",
+							"type": "fieldset",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 560,
+							"label": "Attachments",
+							"name": "attachments",
+							"type": "file",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read",
+								"update",
+								"create"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 547,
+							"label": "State of Progress",
+							"name": "fieldset_2",
+							"type": "fieldset",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						},
+						{
+							"field_id": 557,
+							"label": "References",
+							"name": "fieldset1_1",
+							"type": "fieldset",
+							"values": null,
+							"required": false,
+							"collapsed": false,
+							"bindings": {
+								"type": null,
+								"list": []
+							},
+							"permissions": [
+								"read"
+							],
+							"default_value": null
+						}
+					],
+					"structure": [
+						{
+							"id": 538,
+							"content": [
+								{
+									"id": 539,
+									"content": null
+								},
+								{
+									"id": 540,
+									"content": null
+								}
+							]
+						},
+						{
+							"id": 541,
+							"content": [
+								{
+									"id": 542,
+									"content": null
+								},
+								{
+									"id": 543,
+									"content": null
+								}
+							]
+						},
+						{
+							"id": 544,
+							"content": [
+								{
+									"id": 545,
+									"content": null
+								},
+								{
+									"id": 546,
+									"content": null
+								}
+							]
+						},
+						{
+							"id": 560,
+							"content": null
+						},
+						{
+							"id": 547,
+							"content": [
+								{
+									"id": 548,
+									"content": [
+										{
+											"id": 549,
+											"content": null
+										},
+										{
+											"id": 550,
+											"content": null
+										}
+									]
+								},
+								{
+									"id": 551,
+									"content": [
+										{
+											"id": 552,
+											"content": null
+										},
+										{
+											"id": 553,
+											"content": null
+										}
+									]
+								},
+								{
+									"id": 554,
+									"content": [
+										{
+											"id": 555,
+											"content": null
+										},
+										{
+											"id": 556,
+											"content": null
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": 557,
+							"content": [
+								{
+									"id": 558,
+									"content": null
+								}
+							]
+						}
+					],
+					"semantics": {
+						"title": {
+							"field_id": 545
+						},
+						"status": {
+							"field_id": 556,
+							"value_ids": [
+								553,
+								554,
+								555
+							]
+						},
+						"contributor": {
+							"field_id": 553
+						}
+					},
+					"workflow": {
+						"field_id": 556,
+						"is_used": "0",
+						"rules": {
+							"dates": [],
+							"lists": []
+						},
+						"transitions": [
+							{
+								"from_id": null,
+								"to_id": 553
+							},
+							{
+								"from_id": null,
+								"to_id": 554
+							},
+							{
+								"from_id": null,
+								"to_id": 555
+							},
+							{
+								"from_id": null,
+								"to_id": 556
+							},
+							{
+								"from_id": 553,
+								"to_id": 554
+							},
+							{
+								"from_id": 553,
+								"to_id": 555
+							},
+							{
+								"from_id": 553,
+								"to_id": 556
+							},
+							{
+								"from_id": 554,
+								"to_id": 553
+							},
+							{
+								"from_id": 554,
+								"to_id": 555
+							},
+							{
+								"from_id": 554,
+								"to_id": 556
+							},
+							{
+								"from_id": 555,
+								"to_id": 553
+							},
+							{
+								"from_id": 555,
+								"to_id": 554
+							},
+							{
+								"from_id": 555,
+								"to_id": 556
+							},
+							{
+								"from_id": 556,
+								"to_id": 553
+							},
+							{
+								"from_id": 556,
+								"to_id": 554
+							},
+							{
+								"from_id": 556,
+								"to_id": 555
+							}
+						]
+					},
+					"parent": null,
+					"resources": [
+						{
+							"type": "reports",
+							"uri": "trackers/17/tracker_reports"
+						}
+					],
+					"color_name": "daphne_blue"
+				}
+			],
+			"projects/999": {
+				"error": {
+					"code": 404,
+					"message": "Not Found"
+				}
+			},
+			"projects/999/backlog": {
+				"error": {
+					"code": 404,
+					"message": "Not Found"
+				}
+			},
+			"projects/999/trackers": {
+				"error": {
+					"code": 404,
+					"message": "Not Found"
+				}
+			}
+		},
+		"trackers": {
+			"trackers/12": {
+				"id": 12,
+				"uri": "trackers/12",
+				"html_url": "/plugins/tracker/?tracker=12",
+				"project": {
+					"id": 101,
+					"uri": "projects/101",
+					"label": "Test Project 1"
+				},
+				"label": "Bugs",
+				"description": "Bug tracking",
+				"item_name": "bug_track",
+				"fields": [
+					{
+						"field_id": 411,
+						"label": "Artifact ID",
+						"name": "artifact_id",
+						"type": "aid",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"is_time_displayed": true,
+						"field_id": 414,
+						"label": "Last Modified On",
+						"name": "last_update_date",
+						"type": "lud",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": "2016-09-19 14:39"
+					},
+					{
+						"field_id": 417,
+						"label": "Summary",
+						"name": "summary",
+						"type": "string",
+						"values": null,
+						"required": true,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": ""
+					},
+					{
+						"field_id": 420,
+						"label": "Severity",
+						"name": "severity",
+						"type": "sb",
+						"values": [
+							{
+								"id": 402,
+								"label": "1 - Ordinary",
+								"is_hidden": false
+							},
+							{
+								"id": 403,
+								"label": "2",
+								"is_hidden": false
+							},
+							{
+								"id": 404,
+								"label": "3",
+								"is_hidden": false
+							},
+							{
+								"id": 405,
+								"label": "4",
+								"is_hidden": false
+							},
+							{
+								"id": 406,
+								"label": "5 - Major",
+								"is_hidden": false
+							},
+							{
+								"id": 407,
+								"label": "6",
+								"is_hidden": false
+							},
+							{
+								"id": 408,
+								"label": "7",
+								"is_hidden": false
+							},
+							{
+								"id": 409,
+								"label": "8",
+								"is_hidden": false
+							},
+							{
+								"id": 410,
+								"label": "9 - Critical",
+								"is_hidden": false
+							}
+						],
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": "static",
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": []
+					},
+					{
+						"field_id": 422,
+						"label": "Category",
+						"name": "category",
+						"type": "sb",
+						"values": [
+							{
+								"id": 1316,
+								"label": "Parts",
+								"is_hidden": false
+							},
+							{
+								"id": 1317,
+								"label": "Serials",
+								"is_hidden": false
+							},
+							{
+								"id": 1318,
+								"label": "QAG",
+								"is_hidden": false
+							},
+							{
+								"id": 1319,
+								"label": "Backend",
+								"is_hidden": false
+							},
+							{
+								"id": 1320,
+								"label": "Interface",
+								"is_hidden": false
+							}
+						],
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": "static",
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": []
+					},
+					{
+						"field_id": 426,
+						"label": "Stage 1",
+						"name": "column3",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 427,
+						"label": "Status",
+						"name": "status_id",
+						"type": "sb",
+						"values": [
+							{
+								"id": 411,
+								"label": "New",
+								"is_hidden": false
+							},
+							{
+								"id": 412,
+								"label": "Unconfirmed",
+								"is_hidden": false
+							},
+							{
+								"id": 413,
+								"label": "Verified",
+								"is_hidden": false
+							},
+							{
+								"id": 414,
+								"label": "Resolved",
+								"is_hidden": false
+							},
+							{
+								"id": 415,
+								"label": "Closed",
+								"is_hidden": false
+							},
+							{
+								"id": 416,
+								"label": "Reopened",
+								"is_hidden": false
+							}
+						],
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": "static",
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": [
+							{
+								"id": 412,
+								"label": "Unconfirmed"
+							}
+						]
+					},
+					{
+						"field_id": 430,
+						"label": "Resolution",
+						"name": "resolution",
+						"type": "sb",
+						"values": [
+							{
+								"id": 427,
+								"label": "Fixed",
+								"is_hidden": false
+							},
+							{
+								"id": 428,
+								"label": "Will not fix",
+								"is_hidden": false
+							},
+							{
+								"id": 429,
+								"label": "Invalid",
+								"is_hidden": false
+							},
+							{
+								"id": 430,
+								"label": "Later",
+								"is_hidden": false
+							},
+							{
+								"id": 431,
+								"label": "Duplicate",
+								"is_hidden": false
+							},
+							{
+								"id": 432,
+								"label": "Remind",
+								"is_hidden": false
+							},
+							{
+								"id": 433,
+								"label": "Works for me",
+								"is_hidden": false
+							}
+						],
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": "static",
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": []
+					},
+					{
+						"field_id": 432,
+						"label": "Assigned to",
+						"name": "assigned_to",
+						"type": "sb",
+						"values": [
+							{
+								"id": 103,
+								"label": "user1",
+								"user_reference": {
+									"id": "103",
+									"uri": "users/103",
+									"real_name": "User1 (user1)",
+									"username": "user1"
+								}
+							},
+							{
+								"id": 114,
+								"label": "user3",
+								"user_reference": {
+									"id": "114",
+									"uri": "users/114",
+									"real_name": "User3 (user3)",
+									"username": "user3"
+								}
+							},
+							{
+								"id": 102,
+								"label": "user2",
+								"user_reference": {
+									"id": "102",
+									"uri": "users/102",
+									"real_name": "User2 (user2)",
+									"username": "user2"
+								}
+							},
+							{
+								"id": 112,
+								"label": "user4",
+								"user_reference": {
+									"id": "112",
+									"uri": "users/112",
+									"real_name": "User4 (user4)",
+									"username": "user4"
+								}
+							}
+						],
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": "users",
+							"list": [
+								{
+									"id": 3,
+									"label": "project_members"
+								}
+							]
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": []
+					},
+					{
+						"field_id": 434,
+						"label": "Attachments",
+						"name": "attachment",
+						"type": "file",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 436,
+						"label": "Cross references",
+						"name": "cross_references",
+						"type": "cross",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 439,
+						"label": "Permissions on artifact",
+						"name": "permissions_on_artifact",
+						"type": "perm",
+						"values": {
+							"is_used_by_default": false,
+							"ugroup_representations": [
+								{
+									"id": "1",
+									"uri": "user_groups/1",
+									"label": "Anonymous",
+									"users_uri": "user_groups/1/users",
+									"short_name": "all_users",
+									"key": "ugroup_anonymous_users_name_key"
+								},
+								{
+									"id": "2",
+									"uri": "user_groups/2",
+									"label": "Employee",
+									"users_uri": "user_groups/2/users",
+									"short_name": "registered_users",
+									"key": "ugroup_registered_users_name_key"
+								},
+								{
+									"id": "101_3",
+									"uri": "user_groups/101_3",
+									"label": "Project members",
+									"users_uri": "user_groups/101_3/users",
+									"short_name": "project_members",
+									"key": "ugroup_project_members_name_key"
+								},
+								{
+									"id": "101_4",
+									"uri": "user_groups/101_4",
+									"label": "Project administrators",
+									"users_uri": "user_groups/101_4/users",
+									"short_name": "project_admins",
+									"key": "ugroup_project_admins_name_key"
+								},
+								{
+									"id": "102",
+									"uri": "user_groups/102",
+									"label": "FRS_Admin",
+									"users_uri": "user_groups/102/users",
+									"short_name": "FRS_Admin",
+									"key": "FRS_Admin"
+								}
+							]
+						},
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 412,
+						"label": "Submitted by",
+						"name": "submitted_by",
+						"type": "subby",
+						"values": [
+							{
+								"id": 103,
+								"label": "user1",
+								"user_reference": {
+									"id": "103",
+									"uri": "users/103",
+									"real_name": "User1 (user1)",
+									"username": "user1"
+								}
+							},
+							{
+								"id": 111,
+								"label": "user5",
+								"user_reference": {
+									"id": "111",
+									"uri": "users/111",
+									"real_name": "User5 (user5)",
+									"username": "user5"
+								}
+							},
+							{
+								"id": 102,
+								"label": "user2",
+								"user_reference": {
+									"id": "102",
+									"uri": "users/102",
+									"real_name": "User2 (user2)",
+									"username": "user2"
+								}
+							},
+							{
+								"id": 112,
+								"label": "user4",
+								"user_reference": {
+									"id": "112",
+									"uri": "users/112",
+									"real_name": "User4 (user4)",
+									"username": "user4"
+								}
+							}
+						],
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": "users",
+							"list": [
+								{
+									"id": 0,
+									"label": "artifact_submitters"
+								}
+							]
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": []
+					},
+					{
+						"is_time_displayed": true,
+						"field_id": 415,
+						"label": "Submitted on",
+						"name": "open_date",
+						"type": "subon",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": "2016-09-19 14:39"
+					},
+					{
+						"field_id": 429,
+						"label": "Stage 2",
+						"name": "column4",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 431,
+						"label": "Stage 3",
+						"name": "column9",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 410,
+						"label": "Column Top 1",
+						"name": "column8",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 418,
+						"label": "Original Submission",
+						"name": "details",
+						"type": "text",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": {
+							"format": "text",
+							"content": ""
+						}
+					},
+					{
+						"field_id": 419,
+						"label": "Column Details 1",
+						"name": "column10_1",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 421,
+						"label": "Column Details 2",
+						"name": "column10_11",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 413,
+						"label": "Column Top 2",
+						"name": "column10",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 416,
+						"label": "Details",
+						"name": "fieldset_1",
+						"type": "fieldset",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 425,
+						"label": "Stage",
+						"name": "fieldset1",
+						"type": "fieldset",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 433,
+						"label": "Attachments",
+						"name": "fieldset1_1",
+						"type": "fieldset",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 435,
+						"label": "References",
+						"name": "fieldset1_11",
+						"type": "fieldset",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 438,
+						"label": "Permissions",
+						"name": "fieldset1_111",
+						"type": "fieldset",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					}
+				],
+				"structure": [
+					{
+						"id": 410,
+						"content": [
+							{
+								"id": 411,
+								"content": null
+							},
+							{
+								"id": 412,
+								"content": null
+							}
+						]
+					},
+					{
+						"id": 413,
+						"content": [
+							{
+								"id": 414,
+								"content": null
+							},
+							{
+								"id": 415,
+								"content": null
+							}
+						]
+					},
+					{
+						"id": 416,
+						"content": [
+							{
+								"id": 417,
+								"content": null
+							},
+							{
+								"id": 418,
+								"content": null
+							},
+							{
+								"id": 419,
+								"content": [
+									{
+										"id": 420,
+										"content": null
+									}
+								]
+							},
+							{
+								"id": 421,
+								"content": [
+									{
+										"id": 422,
+										"content": null
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": 425,
+						"content": [
+							{
+								"id": 426,
+								"content": [
+									{
+										"id": 427,
+										"content": null
+									}
+								]
+							},
+							{
+								"id": 429,
+								"content": [
+									{
+										"id": 430,
+										"content": null
+									}
+								]
+							},
+							{
+								"id": 431,
+								"content": [
+									{
+										"id": 432,
+										"content": null
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": 433,
+						"content": [
+							{
+								"id": 434,
+								"content": null
+							}
+						]
+					},
+					{
+						"id": 435,
+						"content": [
+							{
+								"id": 436,
+								"content": null
+							}
+						]
+					},
+					{
+						"id": 438,
+						"content": [
+							{
+								"id": 439,
+								"content": null
+							}
+						]
+					}
+				],
+				"semantics": {
+					"title": {
+						"field_id": 417
+					},
+					"status": {
+						"field_id": 427,
+						"value_ids": [
+							411,
+							412,
+							413,
+							414,
+							416
+						]
+					},
+					"contributor": {
+						"field_id": 432
+					}
+				},
+				"workflow": {
+					"field_id": 427,
+					"is_used": "0",
+					"rules": {
+						"dates": [],
+						"lists": []
+					},
+					"transitions": [
+						{
+							"from_id": null,
+							"to_id": 411
+						},
+						{
+							"from_id": 411,
+							"to_id": 412
+						},
+						{
+							"from_id": 411,
+							"to_id": 413
+						},
+						{
+							"from_id": 411,
+							"to_id": 415
+						},
+						{
+							"from_id": 412,
+							"to_id": 413
+						},
+						{
+							"from_id": 412,
+							"to_id": 415
+						},
+						{
+							"from_id": 414,
+							"to_id": 415
+						},
+						{
+							"from_id": 415,
+							"to_id": 416
+						},
+						{
+							"from_id": 416,
+							"to_id": 414
+						},
+						{
+							"from_id": 416,
+							"to_id": 415
+						},
+						{
+							"from_id": 411,
+							"to_id": 414
+						},
+						{
+							"from_id": 412,
+							"to_id": 414
+						},
+						{
+							"from_id": 413,
+							"to_id": 414
+						},
+						{
+							"from_id": 413,
+							"to_id": 415
+						}
+					]
+				},
+				"parent": null,
+				"resources": [
+					{
+						"type": "reports",
+						"uri": "trackers/12/tracker_reports"
+					}
+				],
+				"color_name": "inca_silver"
+			},
+			"trackers/12/artifacts": [
+				{
+					"id": 19,
+					"uri": "artifacts/19",
+					"xref": "bug_track #19",
+					"tracker": {
+						"id": 12,
+						"uri": "trackers/12",
+						"label": "Bugs"
+					},
+					"project": {
+						"id": 101,
+						"uri": "projects/101",
+						"label": "Test Project 1"
+					},
+					"submitted_by": 103,
+					"submitted_by_user": {
+						"id": 103,
+						"uri": "users/103",
+						"user_url": "/users/user1",
+						"real_name": "User1",
+						"display_name": "User1 (user1)",
+						"username": "user1",
+						"ldap_id": "user1",
+						"avatar_url": "/users/user1/avatar.png",
+						"is_anonymous": false
+					},
+					"submitted_on": "2015-02-26T17:55:22+01:00",
+					"html_url": "/plugins/tracker/?aid=19",
+					"changesets_uri": "artifacts/19/changesets",
+					"values": [
+						{
+							"field_id": 411,
+							"type": "aid",
+							"label": "Artifact ID",
+							"value": 19
+						},
+						{
+							"field_id": 414,
+							"type": "lud",
+							"label": "Last Modified On",
+							"value": "2015-02-26T17:55:22+01:00"
+						},
+						{
+							"field_id": 417,
+							"type": "string",
+							"label": "Summary",
+							"value": "Artifact1"
+						},
+						{
+							"field_id": 420,
+							"type": "sb",
+							"label": "Severity",
+							"values": [
+								{
+									"id": "410",
+									"label": "9 - Critical",
+									"color": {
+										"r": 51,
+										"g": 0,
+										"b": 0
+									}
+								}
+							],
+							"bind_value_ids": [
+								410
+							]
+						},
+						{
+							"field_id": 427,
+							"type": "sb",
+							"label": "Status",
+							"values": [
+								{
+									"id": "415",
+									"label": "Closed",
+									"color": null
+								}
+							],
+							"bind_value_ids": [
+								415
+							]
+						},
+						{
+							"field_id": 430,
+							"type": "sb",
+							"label": "Resolution",
+							"values": [
+								{
+									"id": "427",
+									"label": "Fixed",
+									"color": null
+								}
+							],
+							"bind_value_ids": [
+								427
+							]
+						},
+						{
+							"field_id": 432,
+							"type": "sb",
+							"label": "Assigned to",
+							"values": [
+								{
+									"email": "user2@domain.com",
+									"status": "A",
+									"id": 102,
+									"uri": "users/102",
+									"user_url": "/users/user2",
+									"real_name": "User2",
+									"display_name": "User2 (user2)",
+									"username": "user2",
+									"ldap_id": "user2",
+									"avatar_url": "/users/user2/avatar.png",
+									"is_anonymous": false
+								}
+							],
+							"bind_value_ids": [
+								102
+							]
+						},
+						{
+							"field_id": 434,
+							"type": "file",
+							"label": "Attachments",
+							"file_descriptions": [
+								{
+									"id": 244,
+									"submitted_by": 102,
+									"description": "test",
+									"name": "img.png",
+									"size": 3672,
+									"type": "image/png",
+									"html_url": "/plugins/tracker/?aid=347&field=378&func=show-attachment&attachment=244",
+									"html_preview_url": "/plugins/tracker/?aid=347&field=378&func=preview-attachment&attachment=244",
+									"uri": "artifact_files/244"
+								}
+							]
+						},
+						{
+							"field_id": 436,
+							"type": "cross",
+							"label": "Cross references",
+							"value": []
+						},
+						{
+							"field_id": 439,
+							"label": "Permissions on artifact",
+							"granted_groups": [],
+							"granted_groups_details": []
+						},
+						{
+							"field_id": 412,
+							"type": "subby",
+							"label": "Submitted by",
+							"value": {
+								"email": "user1@domain.com",
+								"status": "A",
+								"id": 103,
+								"uri": "users/103",
+								"user_url": "/users/user1",
+								"real_name": "User1",
+								"display_name": "User1 (user1)",
+								"username": "user1",
+								"ldap_id": "user1",
+								"avatar_url": "/users/user1/avatar.png",
+								"is_anonymous": false
+							}
+						},
+						{
+							"field_id": 415,
+							"type": "subon",
+							"label": "Submitted on",
+							"value": "2015-02-26T17:55:22+01:00"
+						},
+						{
+							"field_id": 418,
+							"type": "text",
+							"label": "Original Submission",
+							"value": "Artifact1 description",
+							"format": "text"
+						}
+					],
+					"values_by_field": null,
+					"last_modified_date": "2015-02-26T17:55:22+01:00",
+					"status": "Closed",
+					"title": "Closing word",
+					"assignees": [
+						{
+							"id": 102,
+							"uri": "users/102",
+							"user_url": "/users/user2",
+							"real_name": "User2",
+							"display_name": "User2 (user2)",
+							"username": "user2",
+							"ldap_id": "user2",
+							"avatar_url": "/users/user2/avatar.png",
+							"is_anonymous": false
+						}
+					]
+				}
+			],
+			"trackers/12/parent_artifacts": {
+				"error": {
+					"code": 404,
+					"message": "Not Found: This tracker has no parent tracker"
+				}
+			},
+			"trackers/12/tracker_reports": [
+				{
+					"id": 120,
+					"uri": "tracker_reports/120",
+					"label": "Bugs",
+					"resources": [
+						{
+							"type": "artifacts",
+							"uri": "tracker_reports/120/artifacts"
+						}
+					]
+				},
+				{
+					"id": 121,
+					"uri": "tracker_reports/121",
+					"label": "Default",
+					"resources": [
+						{
+							"type": "artifacts",
+							"uri": "tracker_reports/121/artifacts"
+						}
+					]
+				}
+			],
+			"trackers/13": {
+				"id": 13,
+				"uri": "trackers/13",
+				"html_url": "/plugins/tracker/?tracker=13",
+				"project": {
+					"id": 102,
+					"uri": "projects/102",
+					"label": "Test Project 2"
+				},
+				"label": "Issues",
+				"description": "Project issues.",
+				"item_name": "issues",
+				"fields": [
+					{
+						"field_id": 457,
+						"label": "Artifact ID",
+						"name": "artifact_id",
+						"type": "aid",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"is_time_displayed": true,
+						"field_id": 459,
+						"label": "Last Modified On",
+						"name": "last_update_date",
+						"type": "lud",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": "2016-09-19 14:49"
+					},
+					{
+						"field_id": 461,
+						"label": "Summary",
+						"name": "summary",
+						"type": "string",
+						"values": null,
+						"required": true,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": ""
+					},
+					{
+						"field_id": 467,
+						"label": "Severity",
+						"name": "severity",
+						"type": "sb",
+						"values": [
+							{
+								"id": 454,
+								"label": "1 - Ordinary",
+								"is_hidden": false
+							},
+							{
+								"id": 455,
+								"label": "2",
+								"is_hidden": false
+							},
+							{
+								"id": 456,
+								"label": "3",
+								"is_hidden": false
+							},
+							{
+								"id": 457,
+								"label": "4",
+								"is_hidden": false
+							},
+							{
+								"id": 458,
+								"label": "5 - Major",
+								"is_hidden": false
+							},
+							{
+								"id": 459,
+								"label": "6",
+								"is_hidden": false
+							},
+							{
+								"id": 460,
+								"label": "7",
+								"is_hidden": false
+							},
+							{
+								"id": 461,
+								"label": "8",
+								"is_hidden": false
+							},
+							{
+								"id": 462,
+								"label": "9 - Critical",
+								"is_hidden": false
+							}
+						],
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": "static",
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": []
+					},
+					{
+						"field_id": 468,
+						"label": "Category",
+						"name": "category",
+						"type": "sb",
+						"values": [
+							{
+								"id": 598,
+								"label": "Bug",
+								"is_hidden": false
+							},
+							{
+								"id": 599,
+								"label": "Enhancement",
+								"is_hidden": false
+							},
+							{
+								"id": 600,
+								"label": "Activity",
+								"is_hidden": false
+							}
+						],
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": "static",
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": [
+							{
+								"id": 598,
+								"label": "Bug"
+							}
+						]
+					},
+					{
+						"field_id": 469,
+						"label": "Stage 1",
+						"name": "column3",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 472,
+						"label": "Status",
+						"name": "status_id",
+						"type": "sb",
+						"values": [
+							{
+								"id": 463,
+								"label": "New",
+								"is_hidden": false
+							},
+							{
+								"id": 464,
+								"label": "Unconfirmed",
+								"is_hidden": false
+							},
+							{
+								"id": 465,
+								"label": "Verified",
+								"is_hidden": false
+							},
+							{
+								"id": 466,
+								"label": "Resolved",
+								"is_hidden": false
+							},
+							{
+								"id": 467,
+								"label": "Closed",
+								"is_hidden": false
+							},
+							{
+								"id": 468,
+								"label": "Reopened",
+								"is_hidden": false
+							}
+						],
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": "static",
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": []
+					},
+					{
+						"field_id": 474,
+						"label": "Resolution",
+						"name": "resolution",
+						"type": "sb",
+						"values": [
+							{
+								"id": 479,
+								"label": "Fixed",
+								"is_hidden": false
+							},
+							{
+								"id": 1000,
+								"label": "In Progess",
+								"is_hidden": false
+							},
+							{
+								"id": 480,
+								"label": "Will not fix",
+								"is_hidden": false
+							},
+							{
+								"id": 481,
+								"label": "Invalid",
+								"is_hidden": false
+							},
+							{
+								"id": 482,
+								"label": "Later",
+								"is_hidden": false
+							},
+							{
+								"id": 483,
+								"label": "Duplicate",
+								"is_hidden": false
+							},
+							{
+								"id": 484,
+								"label": "Remind",
+								"is_hidden": false
+							},
+							{
+								"id": 485,
+								"label": "Works for me",
+								"is_hidden": false
+							},
+							{
+								"id": 1170,
+								"label": "To be tested",
+								"is_hidden": false
+							}
+						],
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": "static",
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": []
+					},
+					{
+						"field_id": 475,
+						"label": "Assigned to",
+						"name": "assigned_to",
+						"type": "sb",
+						"values": [
+							{
+								"id": 109,
+								"label": "user6",
+								"user_reference": {
+									"id": "109",
+									"uri": "users/109",
+									"real_name": "User6 (user6)",
+									"username": "user6"
+								}
+							},
+							{
+								"id": 107,
+								"label": "user7",
+								"user_reference": {
+									"id": "107",
+									"uri": "users/107",
+									"real_name": "User7 (user7)",
+									"username": "user7"
+								}
+							},
+							{
+								"id": 108,
+								"label": "user8",
+								"user_reference": {
+									"id": "108",
+									"uri": "users/108",
+									"real_name": "User8 (user8)",
+									"username": "user8"
+								}
+							},
+							{
+								"id": 105,
+								"label": "user9",
+								"user_reference": {
+									"id": "105",
+									"uri": "users/105",
+									"real_name": "User9 (user9)",
+									"username": "user9"
+								}
+							},
+							{
+								"id": 104,
+								"label": "user10",
+								"user_reference": {
+									"id": "104",
+									"uri": "users/104",
+									"real_name": "User10 (user10)",
+									"username": "user10"
+								}
+							}
+						],
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": "users",
+							"list": [
+								{
+									"id": 3,
+									"label": "project_members"
+								}
+							]
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": []
+					},
+					{
+						"field_id": 476,
+						"label": "Attachments",
+						"name": "attachment",
+						"type": "file",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 477,
+						"label": "Cross references",
+						"name": "cross_references",
+						"type": "cross",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 479,
+						"label": "Permissions on artifact",
+						"name": "permissions_on_artifact",
+						"type": "perm",
+						"values": {
+							"is_used_by_default": false,
+							"ugroup_representations": [
+								{
+									"id": "1",
+									"uri": "user_groups/1",
+									"label": "Anonymous",
+									"users_uri": "user_groups/1/users",
+									"short_name": "all_users",
+									"key": "ugroup_anonymous_users_name_key"
+								},
+								{
+									"id": "2",
+									"uri": "user_groups/2",
+									"label": "Employee",
+									"users_uri": "user_groups/2/users",
+									"short_name": "registered_users",
+									"key": "ugroup_registered_users_name_key"
+								},
+								{
+									"id": "102_3",
+									"uri": "user_groups/102_3",
+									"label": "Project members",
+									"users_uri": "user_groups/102_3/users",
+									"short_name": "project_members",
+									"key": "ugroup_project_members_name_key"
+								},
+								{
+									"id": "102_4",
+									"uri": "user_groups/102_4",
+									"label": "Project administrators",
+									"users_uri": "user_groups/102_4/users",
+									"short_name": "project_admins",
+									"key": "ugroup_project_admins_name_key"
+								},
+								{
+									"id": "103",
+									"uri": "user_groups/103",
+									"label": "FRS_Admin",
+									"users_uri": "user_groups/103/users",
+									"short_name": "FRS_Admin",
+									"key": "FRS_Admin"
+								}
+							]
+						},
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 458,
+						"label": "Submitted by",
+						"name": "submitted_by",
+						"type": "subby",
+						"values": [
+							{
+								"id": 105,
+								"label": "user9",
+								"user_reference": {
+									"id": "105",
+									"uri": "users/105",
+									"real_name": "User9 (user9)",
+									"username": "user9"
+								}
+							}
+						],
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": "users",
+							"list": [
+								{
+									"id": 0,
+									"label": "artifact_submitters"
+								}
+							]
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": []
+					},
+					{
+						"is_time_displayed": true,
+						"field_id": 460,
+						"label": "Submitted on",
+						"name": "open_date",
+						"type": "subon",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": "2016-09-19 14:49"
+					},
+					{
+						"field_id": 470,
+						"label": "Stage 2",
+						"name": "column4",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 471,
+						"label": "Stage 3",
+						"name": "column9",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 462,
+						"label": "Original Submission",
+						"name": "details",
+						"type": "text",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": {
+							"format": "text",
+							"content": ""
+						}
+					},
+					{
+						"field_id": 463,
+						"label": "Column Details 1",
+						"name": "column10_1",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 447,
+						"label": "Column Top 1",
+						"name": "column8",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 464,
+						"label": "Column Details 2",
+						"name": "column10_11",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 451,
+						"label": "Column Top 2",
+						"name": "column10",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 452,
+						"label": "Details",
+						"name": "fieldset_1",
+						"type": "fieldset",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 453,
+						"label": "Stage",
+						"name": "fieldset1",
+						"type": "fieldset",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 454,
+						"label": "Attachments",
+						"name": "fieldset1_1",
+						"type": "fieldset",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 455,
+						"label": "References",
+						"name": "fieldset1_11",
+						"type": "fieldset",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 456,
+						"label": "Permissions",
+						"name": "fieldset1_111",
+						"type": "fieldset",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					}
+				],
+				"structure": [
+					{
+						"id": 447,
+						"content": [
+							{
+								"id": 457,
+								"content": null
+							},
+							{
+								"id": 458,
+								"content": null
+							}
+						]
+					},
+					{
+						"id": 451,
+						"content": [
+							{
+								"id": 459,
+								"content": null
+							},
+							{
+								"id": 460,
+								"content": null
+							}
+						]
+					},
+					{
+						"id": 452,
+						"content": [
+							{
+								"id": 461,
+								"content": null
+							},
+							{
+								"id": 462,
+								"content": null
+							},
+							{
+								"id": 463,
+								"content": [
+									{
+										"id": 467,
+										"content": null
+									}
+								]
+							},
+							{
+								"id": 464,
+								"content": [
+									{
+										"id": 468,
+										"content": null
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": 453,
+						"content": [
+							{
+								"id": 469,
+								"content": [
+									{
+										"id": 472,
+										"content": null
+									}
+								]
+							},
+							{
+								"id": 470,
+								"content": [
+									{
+										"id": 474,
+										"content": null
+									}
+								]
+							},
+							{
+								"id": 471,
+								"content": [
+									{
+										"id": 475,
+										"content": null
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": 454,
+						"content": [
+							{
+								"id": 476,
+								"content": null
+							}
+						]
+					},
+					{
+						"id": 455,
+						"content": [
+							{
+								"id": 477,
+								"content": null
+							}
+						]
+					},
+					{
+						"id": 456,
+						"content": [
+							{
+								"id": 479,
+								"content": null
+							}
+						]
+					}
+				],
+				"semantics": {
+					"title": {
+						"field_id": 461
+					},
+					"status": {
+						"field_id": 472,
+						"value_ids": [
+							463,
+							464,
+							465,
+							466,
+							468
+						]
+					},
+					"contributor": {
+						"field_id": 475
+					},
+					"initial_effort": {
+						"field_id": 468
+					}
+				},
+				"workflow": {
+					"field_id": 472,
+					"is_used": "1",
+					"rules": {
+						"dates": [],
+						"lists": []
+					},
+					"transitions": [
+						{
+							"from_id": null,
+							"to_id": 463
+						},
+						{
+							"from_id": 463,
+							"to_id": 464
+						},
+						{
+							"from_id": 463,
+							"to_id": 465
+						},
+						{
+							"from_id": 463,
+							"to_id": 467
+						},
+						{
+							"from_id": 464,
+							"to_id": 465
+						},
+						{
+							"from_id": 464,
+							"to_id": 467
+						},
+						{
+							"from_id": 466,
+							"to_id": 467
+						},
+						{
+							"from_id": 467,
+							"to_id": 468
+						},
+						{
+							"from_id": 468,
+							"to_id": 466
+						},
+						{
+							"from_id": 468,
+							"to_id": 467
+						},
+						{
+							"from_id": 463,
+							"to_id": 466
+						},
+						{
+							"from_id": 464,
+							"to_id": 466
+						},
+						{
+							"from_id": 465,
+							"to_id": 466
+						},
+						{
+							"from_id": 465,
+							"to_id": 467
+						},
+						{
+							"from_id": 466,
+							"to_id": 468
+						}
+					]
+				},
+				"parent": null,
+				"resources": [
+					{
+						"type": "reports",
+						"uri": "trackers/13/tracker_reports"
+					}
+				],
+				"color_name": "inca_silver"
+			},
+			"trackers/13/artifacts": [],
+			"trackers/13/parent_artifacts": {
+				"error": {
+					"code": 404,
+					"message": "Not Found: This tracker has no parent tracker"
+				}
+			},
+			"trackers/13/tracker_reports": [
+				{
+					"id": 122,
+					"uri": "tracker_reports/122",
+					"label": "Bugs",
+					"resources": [
+						{
+							"type": "artifacts",
+							"uri": "tracker_reports/122/artifacts"
+						}
+					]
+				},
+				{
+					"id": 123,
+					"uri": "tracker_reports/123",
+					"label": "Default",
+					"resources": [
+						{
+							"type": "artifacts",
+							"uri": "tracker_reports/123/artifacts"
+						}
+					]
+				}
+			],
+			"trackers/17": {
+				"id": 17,
+				"uri": "trackers/17",
+				"html_url": "/plugins/tracker/?tracker=17",
+				"project": {
+					"id": 102,
+					"uri": "projects/102",
+					"label": "Test Project 2"
+				},
+				"label": "Tasks",
+				"description": "task",
+				"item_name": "task",
+				"fields": [
+					{
+						"field_id": 539,
+						"label": "N°",
+						"name": "number",
+						"type": "aid",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"is_time_displayed": true,
+						"field_id": 542,
+						"label": "Last Modified On",
+						"name": "last_update_date",
+						"type": "lud",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": "2016-09-19 14:49"
+					},
+					{
+						"field_id": 545,
+						"label": "Task Description",
+						"name": "description",
+						"type": "string",
+						"values": null,
+						"required": true,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": ""
+					},
+					{
+						"field_id": 548,
+						"label": "Column Progress 1",
+						"name": "column5",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"is_time_displayed": false,
+						"field_id": 549,
+						"label": "Start Date",
+						"name": "start_date",
+						"type": "date",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": "2016-09-19"
+					},
+					{
+						"is_time_displayed": false,
+						"field_id": 552,
+						"label": "Due Date",
+						"name": "due_date",
+						"type": "date",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": ""
+					},
+					{
+						"is_time_displayed": false,
+						"field_id": 555,
+						"label": "End Date",
+						"name": "end_date",
+						"type": "date",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": ""
+					},
+					{
+						"field_id": 558,
+						"label": "Cross references",
+						"name": "cross_references",
+						"type": "cross",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"is_time_displayed": true,
+						"field_id": 543,
+						"label": "Submitted on",
+						"name": "open_date",
+						"type": "subon",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": "2016-09-19 14:49"
+					},
+					{
+						"field_id": 546,
+						"label": "Details",
+						"name": "details",
+						"type": "text",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": {
+							"format": "text",
+							"content": ""
+						}
+					},
+					{
+						"field_id": 550,
+						"label": "Remaining Effort (Hours)",
+						"name": "remaining_effort",
+						"type": "float",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 556,
+						"label": "Status",
+						"name": "status_id",
+						"type": "sb",
+						"values": [
+							{
+								"id": 551,
+								"label": "Open",
+								"is_hidden": true
+							},
+							{
+								"id": 552,
+								"label": "Closed",
+								"is_hidden": true
+							},
+							{
+								"id": 553,
+								"label": "Todo",
+								"is_hidden": false
+							},
+							{
+								"id": 554,
+								"label": "On Going",
+								"is_hidden": false
+							},
+							{
+								"id": 555,
+								"label": "Review",
+								"is_hidden": false
+							},
+							{
+								"id": 556,
+								"label": "Done",
+								"is_hidden": false
+							}
+						],
+						"required": true,
+						"collapsed": false,
+						"bindings": {
+							"type": "static",
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": []
+					},
+					{
+						"field_id": 553,
+						"label": "Assigned to",
+						"name": "assigned_to",
+						"type": "sb",
+						"values": [
+							{
+								"id": 109,
+								"label": "user6",
+								"user_reference": {
+									"id": "109",
+									"uri": "users/109",
+									"real_name": "User6 (user6)",
+									"username": "user6"
+								}
+							},
+							{
+								"id": 107,
+								"label": "user7",
+								"user_reference": {
+									"id": "107",
+									"uri": "users/107",
+									"real_name": "User7 (user7)",
+									"username": "user7"
+								}
+							},
+							{
+								"id": 108,
+								"label": "user8",
+								"user_reference": {
+									"id": "108",
+									"uri": "users/108",
+									"real_name": "User8 (user8)",
+									"username": "user8"
+								}
+							},
+							{
+								"id": 105,
+								"label": "user9",
+								"user_reference": {
+									"id": "105",
+									"uri": "users/105",
+									"real_name": "User9 (user9)",
+									"username": "user9"
+								}
+							},
+							{
+								"id": 104,
+								"label": "user10",
+								"user_reference": {
+									"id": "104",
+									"uri": "users/104",
+									"real_name": "User10 (user10)",
+									"username": "user10"
+								}
+							}
+						],
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": "users",
+							"list": [
+								{
+									"id": 3,
+									"label": "project_members"
+								}
+							]
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": []
+					},
+					{
+						"field_id": 540,
+						"label": "Submitted by",
+						"name": "submitted_by",
+						"type": "subby",
+						"values": [
+							{
+								"id": 105,
+								"label": "user9",
+								"user_reference": {
+									"id": "105",
+									"uri": "users/105",
+									"real_name": "User9 (user9)",
+									"username": "user9"
+								}
+							}
+						],
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": "users",
+							"list": [
+								{
+									"id": 0,
+									"label": "artifact_submitters"
+								}
+							]
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": []
+					},
+					{
+						"field_id": 551,
+						"label": "Column Progress 2",
+						"name": "column6",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 554,
+						"label": "Column Progress 3",
+						"name": "column7",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 538,
+						"label": "Column Top 1",
+						"name": "column1",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 541,
+						"label": "Column Top 2",
+						"name": "column2",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 544,
+						"label": "Details",
+						"name": "fieldset_1",
+						"type": "fieldset",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 560,
+						"label": "Attachments",
+						"name": "attachments",
+						"type": "file",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 547,
+						"label": "State of Progress",
+						"name": "fieldset_2",
+						"type": "fieldset",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 557,
+						"label": "References",
+						"name": "fieldset1_1",
+						"type": "fieldset",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					}
+				],
+				"structure": [
+					{
+						"id": 538,
+						"content": [
+							{
+								"id": 539,
+								"content": null
+							},
+							{
+								"id": 540,
+								"content": null
+							}
+						]
+					},
+					{
+						"id": 541,
+						"content": [
+							{
+								"id": 542,
+								"content": null
+							},
+							{
+								"id": 543,
+								"content": null
+							}
+						]
+					},
+					{
+						"id": 544,
+						"content": [
+							{
+								"id": 545,
+								"content": null
+							},
+							{
+								"id": 546,
+								"content": null
+							}
+						]
+					},
+					{
+						"id": 560,
+						"content": null
+					},
+					{
+						"id": 547,
+						"content": [
+							{
+								"id": 548,
+								"content": [
+									{
+										"id": 549,
+										"content": null
+									},
+									{
+										"id": 550,
+										"content": null
+									}
+								]
+							},
+							{
+								"id": 551,
+								"content": [
+									{
+										"id": 552,
+										"content": null
+									},
+									{
+										"id": 553,
+										"content": null
+									}
+								]
+							},
+							{
+								"id": 554,
+								"content": [
+									{
+										"id": 555,
+										"content": null
+									},
+									{
+										"id": 556,
+										"content": null
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": 557,
+						"content": [
+							{
+								"id": 558,
+								"content": null
+							}
+						]
+					}
+				],
+				"semantics": {
+					"title": {
+						"field_id": 545
+					},
+					"status": {
+						"field_id": 556,
+						"value_ids": [
+							553,
+							554,
+							555
+						]
+					},
+					"contributor": {
+						"field_id": 553
+					}
+				},
+				"workflow": {
+					"field_id": 556,
+					"is_used": "0",
+					"rules": {
+						"dates": [],
+						"lists": []
+					},
+					"transitions": [
+						{
+							"from_id": null,
+							"to_id": 553
+						},
+						{
+							"from_id": null,
+							"to_id": 554
+						},
+						{
+							"from_id": null,
+							"to_id": 555
+						},
+						{
+							"from_id": null,
+							"to_id": 556
+						},
+						{
+							"from_id": 553,
+							"to_id": 554
+						},
+						{
+							"from_id": 553,
+							"to_id": 555
+						},
+						{
+							"from_id": 553,
+							"to_id": 556
+						},
+						{
+							"from_id": 554,
+							"to_id": 553
+						},
+						{
+							"from_id": 554,
+							"to_id": 555
+						},
+						{
+							"from_id": 554,
+							"to_id": 556
+						},
+						{
+							"from_id": 555,
+							"to_id": 553
+						},
+						{
+							"from_id": 555,
+							"to_id": 554
+						},
+						{
+							"from_id": 555,
+							"to_id": 556
+						},
+						{
+							"from_id": 556,
+							"to_id": 553
+						},
+						{
+							"from_id": 556,
+							"to_id": 554
+						},
+						{
+							"from_id": 556,
+							"to_id": 555
+						}
+					]
+				},
+				"parent": null,
+				"resources": [
+					{
+						"type": "reports",
+						"uri": "trackers/17/tracker_reports"
+					}
+				],
+				"color_name": "daphne_blue"
+			},
+			"trackers/17/artifacts": [],
+			"trackers/17/parent_artifacts": {
+				"error": {
+					"code": 404,
+					"message": "Not Found: This tracker has no parent tracker"
+				}
+			},
+			"trackers/17/tracker_reports": [
+				{
+					"id": 127,
+					"uri": "tracker_reports/127",
+					"label": "Default",
+					"resources": [
+						{
+							"type": "artifacts",
+							"uri": "tracker_reports/127/artifacts"
+						}
+					]
+				},
+				{
+					"id": 128,
+					"uri": "tracker_reports/128",
+					"label": "Tasks",
+					"resources": [
+						{
+							"type": "artifacts",
+							"uri": "tracker_reports/128/artifacts"
+						}
+					]
+				}
+			],
+			"trackers/29": {
+				"id": 29,
+				"uri": "trackers/29",
+				"html_url": "/plugins/tracker/?tracker=29",
+				"project": {
+					"id": 101,
+					"uri": "projects/101",
+					"label": "Test Project 1"
+				},
+				"label": "Tasks",
+				"description": "task",
+				"item_name": "task",
+				"fields": [
+					{
+						"field_id": 845,
+						"label": "N°",
+						"name": "number",
+						"type": "aid",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"is_time_displayed": true,
+						"field_id": 848,
+						"label": "Last Modified On",
+						"name": "last_update_date",
+						"type": "lud",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": "2016-09-19 14:39"
+					},
+					{
+						"field_id": 851,
+						"label": "Task Description",
+						"name": "description",
+						"type": "string",
+						"values": null,
+						"required": true,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": ""
+					},
+					{
+						"field_id": 854,
+						"label": "Column Progress 1",
+						"name": "column5",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"is_time_displayed": false,
+						"field_id": 855,
+						"label": "Start Date",
+						"name": "start_date",
+						"type": "date",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": "2016-09-19"
+					},
+					{
+						"is_time_displayed": false,
+						"field_id": 858,
+						"label": "Due Date",
+						"name": "due_date",
+						"type": "date",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": ""
+					},
+					{
+						"is_time_displayed": false,
+						"field_id": 861,
+						"label": "End Date",
+						"name": "end_date",
+						"type": "date",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": ""
+					},
+					{
+						"field_id": 864,
+						"label": "Cross references",
+						"name": "cross_references",
+						"type": "cross",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"is_time_displayed": true,
+						"field_id": 849,
+						"label": "Submitted on",
+						"name": "open_date",
+						"type": "subon",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": "2016-09-19 14:39"
+					},
+					{
+						"field_id": 852,
+						"label": "Details",
+						"name": "details",
+						"type": "text",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": {
+							"format": "text",
+							"content": ""
+						}
+					},
+					{
+						"field_id": 856,
+						"label": "Remaining Effort (Hours)",
+						"name": "remaining_effort",
+						"type": "float",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 862,
+						"label": "Status",
+						"name": "status_id",
+						"type": "sb",
+						"values": [
+							{
+								"id": 780,
+								"label": "Open",
+								"is_hidden": true
+							},
+							{
+								"id": 781,
+								"label": "Closed",
+								"is_hidden": true
+							},
+							{
+								"id": 782,
+								"label": "Todo",
+								"is_hidden": false
+							},
+							{
+								"id": 783,
+								"label": "On Going",
+								"is_hidden": false
+							},
+							{
+								"id": 784,
+								"label": "Review",
+								"is_hidden": false
+							},
+							{
+								"id": 785,
+								"label": "Done",
+								"is_hidden": false
+							}
+						],
+						"required": true,
+						"collapsed": false,
+						"bindings": {
+							"type": "static",
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": []
+					},
+					{
+						"field_id": 859,
+						"label": "Assigned to",
+						"name": "assigned_to",
+						"type": "sb",
+						"values": [
+							{
+								"id": 103,
+								"label": "user1",
+								"user_reference": {
+									"id": "103",
+									"uri": "users/103",
+									"real_name": "User1 (user1)",
+									"username": "user1"
+								}
+							},
+							{
+								"id": 114,
+								"label": "user3",
+								"user_reference": {
+									"id": "114",
+									"uri": "users/114",
+									"real_name": "User3 (user3)",
+									"username": "user3"
+								}
+							},
+							{
+								"id": 102,
+								"label": "user2",
+								"user_reference": {
+									"id": "102",
+									"uri": "users/102",
+									"real_name": "User2 (user2)",
+									"username": "user2"
+								}
+							},
+							{
+								"id": 112,
+								"label": "user4",
+								"user_reference": {
+									"id": "112",
+									"uri": "users/112",
+									"real_name": "User4 (user4)",
+									"username": "user4"
+								}
+							}
+						],
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": "users",
+							"list": [
+								{
+									"id": 3,
+									"label": "project_members"
+								}
+							]
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": []
+					},
+					{
+						"field_id": 1903,
+						"label": "Attachments",
+						"name": "attachments",
+						"type": "file",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read",
+							"update",
+							"create"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 846,
+						"label": "Submitted by",
+						"name": "submitted_by",
+						"type": "subby",
+						"values": [
+							{
+								"id": 103,
+								"label": "user1",
+								"user_reference": {
+									"id": "103",
+									"uri": "users/103",
+									"real_name": "User1 (user1)",
+									"username": "user1"
+								}
+							},
+							{
+								"id": 102,
+								"label": "user2",
+								"user_reference": {
+									"id": "102",
+									"uri": "users/102",
+									"real_name": "User2 (user2)",
+									"username": "user2"
+								}
+							},
+							{
+								"id": 112,
+								"label": "user4",
+								"user_reference": {
+									"id": "112",
+									"uri": "users/112",
+									"real_name": "User4 (user4)",
+									"username": "user4"
+								}
+							}
+						],
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": "users",
+							"list": [
+								{
+									"id": 0,
+									"label": "artifact_submitters"
+								}
+							]
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": []
+					},
+					{
+						"field_id": 857,
+						"label": "Column Progress 2",
+						"name": "column6",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 860,
+						"label": "Column Progress 3",
+						"name": "column7",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 844,
+						"label": "Column Top 1",
+						"name": "column1",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 847,
+						"label": "Column Top 2",
+						"name": "column2",
+						"type": "column",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 850,
+						"label": "Details",
+						"name": "fieldset_1",
+						"type": "fieldset",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 853,
+						"label": "State of Progress",
+						"name": "fieldset_2",
+						"type": "fieldset",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					},
+					{
+						"field_id": 863,
+						"label": "References",
+						"name": "fieldset1_1",
+						"type": "fieldset",
+						"values": null,
+						"required": false,
+						"collapsed": false,
+						"bindings": {
+							"type": null,
+							"list": []
+						},
+						"permissions": [
+							"read"
+						],
+						"default_value": null
+					}
+				],
+				"structure": [
+					{
+						"id": 844,
+						"content": [
+							{
+								"id": 845,
+								"content": null
+							},
+							{
+								"id": 846,
+								"content": null
+							}
+						]
+					},
+					{
+						"id": 847,
+						"content": [
+							{
+								"id": 848,
+								"content": null
+							},
+							{
+								"id": 849,
+								"content": null
+							}
+						]
+					},
+					{
+						"id": 850,
+						"content": [
+							{
+								"id": 851,
+								"content": null
+							},
+							{
+								"id": 852,
+								"content": null
+							},
+							{
+								"id": 1903,
+								"content": null
+							}
+						]
+					},
+					{
+						"id": 853,
+						"content": [
+							{
+								"id": 854,
+								"content": [
+									{
+										"id": 855,
+										"content": null
+									},
+									{
+										"id": 856,
+										"content": null
+									}
+								]
+							},
+							{
+								"id": 857,
+								"content": [
+									{
+										"id": 858,
+										"content": null
+									},
+									{
+										"id": 859,
+										"content": null
+									}
+								]
+							},
+							{
+								"id": 860,
+								"content": [
+									{
+										"id": 861,
+										"content": null
+									},
+									{
+										"id": 862,
+										"content": null
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": 863,
+						"content": [
+							{
+								"id": 864,
+								"content": null
+							}
+						]
+					}
+				],
+				"semantics": {
+					"title": {
+						"field_id": 851
+					},
+					"status": {
+						"field_id": 862,
+						"value_ids": [
+							782,
+							783,
+							784
+						]
+					},
+					"contributor": {
+						"field_id": 859
+					}
+				},
+				"workflow": {
+					"field_id": 862,
+					"is_used": "0",
+					"rules": {
+						"dates": [],
+						"lists": []
+					},
+					"transitions": [
+						{
+							"from_id": null,
+							"to_id": 782
+						},
+						{
+							"from_id": null,
+							"to_id": 783
+						},
+						{
+							"from_id": null,
+							"to_id": 784
+						},
+						{
+							"from_id": null,
+							"to_id": 785
+						},
+						{
+							"from_id": 782,
+							"to_id": 783
+						},
+						{
+							"from_id": 782,
+							"to_id": 784
+						},
+						{
+							"from_id": 782,
+							"to_id": 785
+						},
+						{
+							"from_id": 783,
+							"to_id": 782
+						},
+						{
+							"from_id": 783,
+							"to_id": 784
+						},
+						{
+							"from_id": 783,
+							"to_id": 785
+						},
+						{
+							"from_id": 784,
+							"to_id": 782
+						},
+						{
+							"from_id": 784,
+							"to_id": 783
+						},
+						{
+							"from_id": 784,
+							"to_id": 785
+						},
+						{
+							"from_id": 785,
+							"to_id": 782
+						},
+						{
+							"from_id": 785,
+							"to_id": 783
+						},
+						{
+							"from_id": 785,
+							"to_id": 784
+						}
+					]
+				},
+				"parent": null,
+				"resources": [
+					{
+						"type": "reports",
+						"uri": "trackers/29/tracker_reports"
+					}
+				],
+				"color_name": "daphne_blue"
+			},
+			"trackers/29/artifacts": [],
+			"trackers/29/parent_artifacts": {
+				"error": {
+					"code": 404,
+					"message": "Not Found: This tracker has no parent tracker"
+				}
+			},
+			"trackers/29/tracker_reports": [
+				{
+					"id": 143,
+					"uri": "tracker_reports/143",
+					"label": "Default",
+					"resources": [
+						{
+							"type": "artifacts",
+							"uri": "tracker_reports/143/artifacts"
+						}
+					]
+				},
+				{
+					"id": 144,
+					"uri": "tracker_reports/144",
+					"label": "Tasks",
+					"resources": [
+						{
+							"type": "artifacts",
+							"uri": "tracker_reports/144/artifacts"
+						}
+					]
+				}
+			],
+			"trackers/99": {
+				"error": {
+					"code": 404,
+					"message": "Not Found: this tracker is deleted"
+				}
+			},
+			"trackers/99/artifacts": {
+				"error": {
+					"code": 404,
+					"message": "Not Found: this tracker is deleted"
+				}
+			},
+			"trackers/99/parent_artifacts": {
+				"error": {
+					"code": 404,
+					"message": "Not Found: This tracker has no parent tracker"
+				}
+			},
+			"trackers/99/tracker_reports": {
+				"error": {
+					"code": 404,
+					"message": "Not Found: this tracker is deleted"
+				}
+			}
+		},
+		"trackerreports": {
+			"tracker_reports/120": {
+				"id": 120,
+				"uri": "tracker_reports/120",
+				"label": "Bugs",
+				"resources": [
+					{
+						"type": "artifacts",
+						"uri": "tracker_reports/120/artifacts"
+					}
+				]
+			},
+			"tracker_reports/120/artifacts": [],
+			"tracker_reports/121": {
+				"id": 121,
+				"uri": "tracker_reports/121",
+				"label": "Default",
+				"resources": [
+					{
+						"type": "artifacts",
+						"uri": "tracker_reports/121/artifacts"
+					}
+				]
+			},
+			"tracker_reports/121/artifacts": [
+				{
+					"id": 19,
+					"uri": "artifacts/19",
+					"xref": "bug_track #19",
+					"tracker": {
+						"id": 12,
+						"uri": "trackers/12",
+						"label": "Bugs"
+					},
+					"project": {
+						"id": 101,
+						"uri": "projects/101",
+						"label": "Test Project 1"
+					},
+					"submitted_by": 103,
+					"submitted_by_user": {
+						"id": 103,
+						"uri": "users/103",
+						"user_url": "/users/user1",
+						"real_name": "User1",
+						"display_name": "User1 (user1)",
+						"username": "user1",
+						"ldap_id": "user1",
+						"avatar_url": "/users/user1/avatar.png",
+						"is_anonymous": false
+					},
+					"submitted_on": "2015-02-26T17:55:22+01:00",
+					"html_url": "/plugins/tracker/?aid=19",
+					"changesets_uri": "artifacts/19/changesets",
+					"values": [
+						{
+							"field_id": 411,
+							"type": "aid",
+							"label": "Artifact ID",
+							"value": 19
+						},
+						{
+							"field_id": 414,
+							"type": "lud",
+							"label": "Last Modified On",
+							"value": "2015-02-26T17:55:22+01:00"
+						},
+						{
+							"field_id": 417,
+							"type": "string",
+							"label": "Summary",
+							"value": "Artifact1"
+						},
+						{
+							"field_id": 420,
+							"type": "sb",
+							"label": "Severity",
+							"values": [
+								{
+									"id": "410",
+									"label": "9 - Critical",
+									"color": {
+										"r": 51,
+										"g": 0,
+										"b": 0
+									}
+								}
+							],
+							"bind_value_ids": [
+								410
+							]
+						},
+						{
+							"field_id": 427,
+							"type": "sb",
+							"label": "Status",
+							"values": [
+								{
+									"id": "415",
+									"label": "Closed",
+									"color": null
+								}
+							],
+							"bind_value_ids": [
+								415
+							]
+						},
+						{
+							"field_id": 430,
+							"type": "sb",
+							"label": "Resolution",
+							"values": [
+								{
+									"id": "427",
+									"label": "Fixed",
+									"color": null
+								}
+							],
+							"bind_value_ids": [
+								427
+							]
+						},
+						{
+							"field_id": 432,
+							"type": "sb",
+							"label": "Assigned to",
+							"values": [
+								{
+									"email": "user2@domain.com",
+									"status": "A",
+									"id": 102,
+									"uri": "users/102",
+									"user_url": "/users/user2",
+									"real_name": "User2",
+									"display_name": "User2 (user2)",
+									"username": "user2",
+									"ldap_id": "user2",
+									"avatar_url": "/users/user2/avatar.png",
+									"is_anonymous": false
+								}
+							],
+							"bind_value_ids": [
+								102
+							]
+						},
+						{
+							"field_id": 434,
+							"type": "file",
+							"label": "Attachments",
+							"file_descriptions": [
+								{
+									"id": 244,
+									"submitted_by": 102,
+									"description": "test",
+									"name": "img.png",
+									"size": 3672,
+									"type": "image/png",
+									"html_url": "/plugins/tracker/?aid=347&field=378&func=show-attachment&attachment=244",
+									"html_preview_url": "/plugins/tracker/?aid=347&field=378&func=preview-attachment&attachment=244",
+									"uri": "artifact_files/244"
+								}
+							]
+						},
+						{
+							"field_id": 436,
+							"type": "cross",
+							"label": "Cross references",
+							"value": []
+						},
+						{
+							"field_id": 439,
+							"label": "Permissions on artifact",
+							"granted_groups": [],
+							"granted_groups_details": []
+						},
+						{
+							"field_id": 412,
+							"type": "subby",
+							"label": "Submitted by",
+							"value": {
+								"email": "user1@domain.com",
+								"status": "A",
+								"id": 103,
+								"uri": "users/103",
+								"user_url": "/users/user1",
+								"real_name": "User1",
+								"display_name": "User1 (user1)",
+								"username": "user1",
+								"ldap_id": "user1",
+								"avatar_url": "/users/user1/avatar.png",
+								"is_anonymous": false
+							}
+						},
+						{
+							"field_id": 415,
+							"type": "subon",
+							"label": "Submitted on",
+							"value": "2015-02-26T17:55:22+01:00"
+						},
+						{
+							"field_id": 418,
+							"type": "text",
+							"label": "Original Submission",
+							"value": "Artifact1 description",
+							"format": "text"
+						}
+					],
+					"values_by_field": null,
+					"last_modified_date": "2015-02-26T17:55:22+01:00",
+					"status": "Closed",
+					"title": "Closing word",
+					"assignees": [
+						{
+							"id": 102,
+							"uri": "users/102",
+							"user_url": "/users/user2",
+							"real_name": "User2",
+							"display_name": "User2 (user2)",
+							"username": "user2",
+							"ldap_id": "user2",
+							"avatar_url": "/users/user2/avatar.png",
+							"is_anonymous": false
+						}
+					]
+				}
+			],
+			"tracker_reports/122": {
+				"id": 122,
+				"uri": "tracker_reports/122",
+				"label": "Bugs",
+				"resources": [
+					{
+						"type": "artifacts",
+						"uri": "tracker_reports/122/artifacts"
+					}
+				]
+			},
+			"tracker_reports/122/artifacts": [],
+			"tracker_reports/123": {
+				"id": 123,
+				"uri": "tracker_reports/123",
+				"label": "Default",
+				"resources": [
+					{
+						"type": "artifacts",
+						"uri": "tracker_reports/123/artifacts"
+					}
+				]
+			},
+			"tracker_reports/123/artifacts": [],
+			"tracker_reports/127": {
+				"id": 127,
+				"uri": "tracker_reports/127",
+				"label": "Default",
+				"resources": [
+					{
+						"type": "artifacts",
+						"uri": "tracker_reports/127/artifacts"
+					}
+				]
+			},
+			"tracker_reports/127/artifacts": [],
+			"tracker_reports/128": {
+				"id": 128,
+				"uri": "tracker_reports/128",
+				"label": "Tasks",
+				"resources": [
+					{
+						"type": "artifacts",
+						"uri": "tracker_reports/128/artifacts"
+					}
+				]
+			},
+			"tracker_reports/128/artifacts": [],
+			"tracker_reports/143": {
+				"id": 143,
+				"uri": "tracker_reports/143",
+				"label": "Default",
+				"resources": [
+					{
+						"type": "artifacts",
+						"uri": "tracker_reports/143/artifacts"
+					}
+				]
+			},
+			"tracker_reports/143/artifacts": [],
+			"tracker_reports/144": {
+				"id": 144,
+				"uri": "tracker_reports/144",
+				"label": "Tasks",
+				"resources": [
+					{
+						"type": "artifacts",
+						"uri": "tracker_reports/144/artifacts"
+					}
+				]
+			},
+			"tracker_reports/144/artifacts": [],
+			"tracker_reports/999": {
+				"error": {
+					"code": 404,
+					"message": "Not Found"
+				}
+			},
+			"tracker_reports/999/artifacts": {
+				"error": {
+					"code": 404,
+					"message": "Not Found"
+				}
+			}
+		},
+		"artifacts": {
+			"artifacts/19": {
+				"id": 19,
+				"uri": "artifacts/19",
+				"xref": "bug_track #19",
+				"tracker": {
+					"id": 12,
+					"uri": "trackers/12",
+					"label": "Bugs"
+				},
+				"project": {
+					"id": 101,
+					"uri": "projects/101",
+					"label": "Test Project 1"
+				},
+				"submitted_by": 103,
+				"submitted_by_user": {
+					"id": 103,
+					"uri": "users/103",
+					"user_url": "/users/user1",
+					"real_name": "User1",
+					"display_name": "User1 (user1)",
+					"username": "user1",
+					"ldap_id": "user1",
+					"avatar_url": "/users/user1/avatar.png",
+					"is_anonymous": false
+				},
+				"submitted_on": "2015-02-26T17:55:22+01:00",
+				"html_url": "/plugins/tracker/?aid=19",
+				"changesets_uri": "artifacts/19/changesets",
+				"values": [
+					{
+						"field_id": 411,
+						"type": "aid",
+						"label": "Artifact ID",
+						"value": 19
+					},
+					{
+						"field_id": 414,
+						"type": "lud",
+						"label": "Last Modified On",
+						"value": "2015-02-26T17:55:22+01:00"
+					},
+					{
+						"field_id": 417,
+						"type": "string",
+						"label": "Summary",
+						"value": "Artifact1"
+					},
+					{
+						"field_id": 420,
+						"type": "sb",
+						"label": "Severity",
+						"values": [
+							{
+								"id": "410",
+								"label": "9 - Critical",
+								"color": {
+									"r": 51,
+									"g": 0,
+									"b": 0
+								}
+							}
+						],
+						"bind_value_ids": [
+							410
+						]
+					},
+					{
+						"field_id": 427,
+						"type": "sb",
+						"label": "Status",
+						"values": [
+							{
+								"id": "415",
+								"label": "Closed",
+								"color": null
+							}
+						],
+						"bind_value_ids": [
+							415
+						]
+					},
+					{
+						"field_id": 430,
+						"type": "sb",
+						"label": "Resolution",
+						"values": [
+							{
+								"id": "427",
+								"label": "Fixed",
+								"color": null
+							}
+						],
+						"bind_value_ids": [
+							427
+						]
+					},
+					{
+						"field_id": 432,
+						"type": "sb",
+						"label": "Assigned to",
+						"values": [
+							{
+								"email": "user2@domain.com",
+								"status": "A",
+								"id": 102,
+								"uri": "users/102",
+								"user_url": "/users/user2",
+								"real_name": "User2",
+								"display_name": "User2 (user2)",
+								"username": "user2",
+								"ldap_id": "user2",
+								"avatar_url": "/users/user2/avatar.png",
+								"is_anonymous": false
+							}
+						],
+						"bind_value_ids": [
+							102
+						]
+					},
+					{
+						"field_id": 434,
+						"type": "file",
+						"label": "Attachments",
+						"file_descriptions": [
+							{
+								"id": 244,
+								"submitted_by": 102,
+								"description": "test",
+								"name": "img.png",
+								"size": 3672,
+								"type": "image/png",
+								"html_url": "/plugins/tracker/?aid=347&field=378&func=show-attachment&attachment=244",
+								"html_preview_url": "/plugins/tracker/?aid=347&field=378&func=preview-attachment&attachment=244",
+								"uri": "artifact_files/244"
+							}
+						]
+					},
+					{
+						"field_id": 436,
+						"type": "cross",
+						"label": "Cross references",
+						"value": []
+					},
+					{
+						"field_id": 439,
+						"label": "Permissions on artifact",
+						"granted_groups": [],
+						"granted_groups_details": []
+					},
+					{
+						"field_id": 412,
+						"type": "subby",
+						"label": "Submitted by",
+						"value": {
+							"email": "user1@domain.com",
+							"status": "A",
+							"id": 103,
+							"uri": "users/103",
+							"user_url": "/users/user1",
+							"real_name": "User1",
+							"display_name": "User1 (user1)",
+							"username": "user1",
+							"ldap_id": "user1",
+							"avatar_url": "/users/user1/avatar.png",
+							"is_anonymous": false
+						}
+					},
+					{
+						"field_id": 415,
+						"type": "subon",
+						"label": "Submitted on",
+						"value": "2015-02-26T17:55:22+01:00"
+					},
+					{
+						"field_id": 418,
+						"type": "text",
+						"label": "Original Submission",
+						"value": "Artifact1 description",
+						"format": "text"
+					}
+				],
+				"values_by_field": {
+					"artifact_id": {
+						"field_id": 411,
+						"type": "aid",
+						"label": "Artifact ID",
+						"value": 19
+					},
+					"summary": {
+						"field_id": 417,
+						"type": "string",
+						"label": "Summary",
+						"value": "Artifact1"
+					},
+					"details": {
+						"field_id": 418,
+						"type": "text",
+						"label": "Original Submission",
+						"value": "Artifact1 description",
+						"format": "text"
+					}
+				},
+				"last_modified_date": "2015-02-26T17:55:22+01:00",
+				"status": "Closed",
+				"title": "Closing word",
+				"assignees": [
+					{
+						"id": 102,
+						"uri": "users/102",
+						"user_url": "/users/user2",
+						"real_name": "User2",
+						"display_name": "User2 (user2)",
+						"username": "user2",
+						"ldap_id": "user2",
+						"avatar_url": "/users/user2/avatar.png",
+						"is_anonymous": false
+					}
+				]
+			},
+			"artifacts/19/changesets": [
+				{
+					"id": 43,
+					"submitted_by": 103,
+					"submitted_by_details": {
+						"id": 103,
+						"uri": "users/103",
+						"user_url": "/users/user1",
+						"real_name": "User1",
+						"display_name": "User1 (user1)",
+						"username": "user1",
+						"ldap_id": "user1",
+						"avatar_url": "/users/user1/avatar.png",
+						"is_anonymous": false
+					},
+					"submitted_on": "2015-02-26T17:55:22+01:00",
+					"email": null,
+					"last_comment": {
+						"body": "",
+						"post_processed_body": "",
+						"format": "text"
+					},
+					"last_modified_by": {
+						"id": 103,
+						"uri": "users/103",
+						"user_url": "/users/user1",
+						"real_name": "User1",
+						"display_name": "User1 (user1)",
+						"username": "user1",
+						"ldap_id": "user1",
+						"avatar_url": "/users/user1/avatar.png",
+						"is_anonymous": false
+					},
+					"values": {
+						"0": {
+							"field_id": 411,
+							"type": "aid",
+							"label": "Artifact ID",
+							"value": 19
+						},
+						"1": {
+							"field_id": 414,
+							"type": "lud",
+							"label": "Last Modified On",
+							"value": "2015-02-26T17:55:22+01:00"
+						},
+						"2": {
+							"field_id": 417,
+							"type": "string",
+							"label": "Summary",
+							"value": "Artifact1"
+						},
+						"3": {
+							"field_id": 420,
+							"type": "sb",
+							"label": "Severity",
+							"values": [
+								{
+									"id": "410",
+									"label": "9 - Critical",
+									"color": {
+										"r": 51,
+										"g": 0,
+										"b": 0
+									}
+								}
+							],
+							"bind_value_ids": [
+								410
+							]
+						},
+						"5": {
+							"field_id": 427,
+							"type": "sb",
+							"label": "Status",
+							"values": [
+								{
+									"id": "415",
+									"label": "Closed",
+									"color": null
+								}
+							],
+							"bind_value_ids": [
+								415
+							]
+						},
+						"6": {
+							"field_id": 430,
+							"type": "sb",
+							"label": "Resolution",
+							"values": [
+								{
+									"id": "427",
+									"label": "Fixed",
+									"color": null
+								}
+							],
+							"bind_value_ids": [
+								427
+							]
+						},
+						"7": {
+							"field_id": 432,
+							"type": "sb",
+							"label": "Assigned to",
+							"values": [
+								{
+									"email": "user2@domain.com",
+									"status": "A",
+									"id": 102,
+									"uri": "users/102",
+									"user_url": "/users/user2",
+									"real_name": "User2",
+									"display_name": "User2 (user2)",
+									"username": "user2",
+									"ldap_id": "user2",
+									"avatar_url": "/users/user2/avatar.png",
+									"is_anonymous": false
+								}
+							],
+							"bind_value_ids": [
+								102
+							]
+						},
+						"8": {
+							"field_id": 434,
+							"type": "file",
+							"label": "Attachments",
+							"file_descriptions": [
+								{
+									"id": 244,
+									"submitted_by": 102,
+									"description": "test",
+									"name": "img.png",
+									"size": 3672,
+									"type": "image/png",
+									"html_url": "/plugins/tracker/?aid=347&field=378&func=show-attachment&attachment=244",
+									"html_preview_url": "/plugins/tracker/?aid=347&field=378&func=preview-attachment&attachment=244",
+									"uri": "artifact_files/244"
+								}
+							]
+						},
+						"9": {
+							"field_id": 436,
+							"type": "cross",
+							"label": "Cross references",
+							"value": []
+						},
+						"10": {
+							"field_id": 439,
+							"label": "Permissions on artifact",
+							"granted_groups": [],
+							"granted_groups_details": []
+						},
+						"11": {
+							"field_id": 412,
+							"type": "subby",
+							"label": "Submitted by",
+							"value": {
+								"email": "user1@domain.com",
+								"status": "A",
+								"id": 103,
+								"uri": "users/103",
+								"user_url": "/users/user1",
+								"real_name": "User1",
+								"display_name": "User1 (user1)",
+								"username": "user1",
+								"ldap_id": "user1",
+								"avatar_url": "/users/user1/avatar.png",
+								"is_anonymous": false
+							}
+						},
+						"12": {
+							"field_id": 415,
+							"type": "subon",
+							"label": "Submitted on",
+							"value": "2015-02-26T17:55:22+01:00"
+						},
+						"13": {
+							"field_id": 418,
+							"type": "text",
+							"label": "Original Submission",
+							"value": "Artifact1 description",
+							"format": "text"
+						}
+					},
+					"last_modified_date": "2015-02-26T17:55:22+01:00"
+				}
+			],
+			"artifacts/19/linked_artifacts": {
+				"collection": []
+			},
+			"artifacts/19/links": {
+				"natures": null
+			},
+			"artifacts/999": {
+				"error": {
+					"code": 404,
+					"message": "Not Found"
+				}
+			},
+			"artifacts/999/changesets": {
+				"error": {
+					"code": 404,
+					"message": "Not Found"
+				}
+			},
+			"artifacts/999/linked_artifacts": {
+				"error": {
+					"code": 404,
+					"message": "Not Found"
+				}
+			},
+			"artifacts/999/links": {
+				"error": {
+					"code": 404,
+					"message": "Not Found"
+				}
+			}
+		},
+		"artifactfiles": {
+			"artifact_files/244": {
+				"data": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAx6wAAMesBANH2gwAAAAl2cEFnAAAAQAAAAEAA6vP4YAAADZpJREFUeNrtm2usZWdZx3//d+19zj6nQAtzZlqKlhowaYs2MYQPGiwaPxCNMWgE0lAIKirYoFCVKhA/YgQ00Hbqh2IwRrmE1ssHv2DqBRPDJTaCpRfa2ktKZ6Yz58xMZ+acfVnr+fvhfd+190ygmTlzzhTIvMnK2mftvS7P//k//+d5n/Ue8T08umfevJZSutX2AaRPpSs+/9xO30MvtJHPN+LAW/4deIMkYtZ+iUY/31x59+ZO3iO90EZ+t9E985a32bwBMGA16YZT/3X/V3b6Pt+zAIjmZikhIdvS0tBpdfRjG7fv+adnb7ts8AMNQHfgHa+WBj8pEq5RGmZ4xctCSb80aAbv+YECYGP/2ujonXub+ZHmZiSgMW4QGCwtDfPzSh89eufey38gANjYv3a5pC8BNwJMnn7PEin9rN3YkoSAVMU664E0sv2P3/cAbOxf+2FJ/2r7dcAdAIMmXouba6wGSFgJuwElYnMsMjU6odcd/cu1d37fArBx59olkv4WuC6lZODS9dte+me65NKfhmYZSZBBkAQk2meOYAmELM8cvH19/54Xn89z7JianuuQ9WnEDUKuSif4jW593WllhJxsWVkIjTe36I6dyP7PoSBJ18v8CPCN7T7HeTOgO/jOV8TBd77iXM7ZuGPtbqE3Z8uKOcYo7Zk+/n9rNI1xUq7TMutnh48RW+PMBmNZBtaMfu58nn/bAMSBGy+NAzd9TvAoNI90B3/rvvbA77xufPSW560uN+5Yu1nSL5uscZaxjCSlpqF98nE8mckSOOEQBEwffYKaDtzvaCVufUEAsPkU8FbBCLEC+gmJrw6n7cenz/z2d7zu0Tv2/pSkjwNJSLYtitIXJnTPHac7/CwogYWWhowffoz28IblVH5XEgRqgcuP3bn2qrN87KUdASAO3fgrgl8tAel8VM5ixS0pXfKZM8/ZuH3tNbL+BTOq1BdSHwKQmdA0TB5+AC0twSAxe+oZJg98izQYyNnrlglbko0QAR+4YAB8BQZxavMukuqjl1hFRs5A8Nb24B/+XT1n/fa1FyHtd/IqYKR8sk/fFEKIbn2d7uhR4rlTbH71ayXzCZCwO8CqGJoJwc9sx5HbAuBVH3/xezVIl8lGtjz3H6pJCqzEjd2BW99dTvtN4IZ8Rqa+BYvbPAqEZzOmjzzC1pe/DG2XBdI2OLA7hFBhnGzQ6voda5fuOgDr+9depOHwXbE5za7Kz36a6Fm2ZBGI4fBDx+957S8k9BeVIjJQk1l/EgTOYGAYNGx+/WHa48dAySAFQLittWBJnc6Yewlz1a4DkOD6NEjXdEc2RJPIfM+OQYbIPsZAspmOf8gbh//ZEEI5hp1/qljYKPui7+1J8CxHfCi7XxC2u5IHTb5tqR80FFo7CxPa8wLA0k2G1B4+Wmlv2XM3Kkpi78Ch8UP/4xhvFZ0ooteHMz3taxBFQHvKECXIZ1lVEEREm0mUayAvzg7yZGHlLEwYnxcAst8kqW3XTxCnNi0su7izuFbOIHiyxeRbDy2aCzF/aBfLS12DBN2moSOHuJHbXAy6izZXA1kwogpPPohyvbx8LracMwAb+9euRenliFlsjWPy2NNykiEogogdmEDDAVv3fx2fOoEsZM2Nr1hl/vRlzeyEcxZIwsr6Hp0JRyvTyUpZXiCVMHK5TgcEsa2UftYnKaU3FbWClNrJo087jh4X2CbyYyggifbwIaYPP5RzOadxoB8uua+nfQ2UXB/kswIUbufXWLhIAaH+oYW/dgUAd/GLsiZAkgnatj351fvtrqOWZ3IgWsbf+N986ShBHtXzLg7PlMfQnXRmiIUju7R41iW+52ZXkM7QEIXsztPdZQBcZhE59yphOh8/Gaf+8z7i1CkrZaGOkyfo1jfoi7y+eHefuQBiZtqT2SKXoJaUjXfvc9yVTBt9ubFQefQNs04pbe0aABu379mDtJoVqKSrPNrZxvE48W9f0+zQESuh2aHD7sYTqivdK72w8yPHBNpT9HpgCliFKYVP1Axb7T4NgJKDnZ9lCvHt7QBwVv2AkIaNSUQWqFx75Goshacxng5P3PuVZvSaV7s7vpmTQnXjorckulkQ4xznJhusxZS4YKSBpj9aO4OVGrUKkoOYdG08sWsANDhhyYlFChpbWX7cMmhi/MCjg24TqRFpwGmBDODORP9aIwNS83lV9N7WGi05yVhFKvraW3YpBgbAk/vevzFmG+OsQqCzpxZdDmY5Z+Q8nWc+EzJOU0Kiw93YuD09YbcnSxapE4BSCfZxX/Ui5qVF1ZCoXYDKqlC+JR5g3bYd48+aAer0HI2mJXMnUjGiKrSVGR3OgOZanZjmpK2hiTGEtRAS9C7XAk49vRcyXibDPGRKLeh6cM/7Dt+9XQDOigF73rc+BdbBCVGFp/dIJXmU2nwu/8KtiVMQY5eJ2+Ic+HQvO3I53JfHtVVWJlGK+TOVWywDn9iu8WcNAIAd94KWbWf1jbn3+geN7BHn+rB4KhFTExPjifuKsJS7/TZX9jkY+R7q0yh91e3cdYAT2F+4IAAAn1lwd52T9d73GY6tHQ8bYpJv1bUQEy96tzeM+fw2g1LvWiaRREmVsoWInFPvt9M3LwgAe373yIOYx4QG2F6krWsno7ZponpW2fO1EgwRM+i23Pc46rROofnfi0CnxUIqt1JtW9bA9j17bnn2+IViAMZ3GQ/cu2XuKRuSSolPvyemGZuIBaVvRbeVZ43hyFtRt7mhveRlp89Z5cApzLG1W478+fkYvw0AdI+D9Uw/qed7lAdOCjmLpHtj54zIrMmx080Sbnv29Kj1G0ZpMUJc1VfJGsq+4XyNP2cA1n7v8KM2nxWkPClXDYW+LC9dQsl91+aMxie5PxQmJuqny1kU8zsvWfmajSMXRPnlQe4iu3HEJ9b+4PCDFxyAwoOP0HGcft5SmnxFEJRSh3Gd7/Xt3zJjrkDgrAcLGpivnltqlk0aKnJ7Mc8pwmHME2HOm/rbBmDt/UcOBH6vQyMiXBOy6+uKJsI5LOywGJjo5tFS05sLIDlDLIqp8oUaBUUXM2vcGDnC7973gfVtTXx2BACAvb9/5PM4PgmMcvznZwashpCKVNloiVzynpHv+zdBU/o+Sw12G6cldfM+gGQzIHjbvlvX790p47cNAEBK7Qdt/qOfDPTzeEHjwJIsmqb0z6vXa4OkUn7WP4hrmlNDMKSL7HlKq/kj+2498g87afx5AfCyW45tmu6tDv+3g1HJTzKQljQjuXPkdJBGmFgQxDMBcaV6ziFppJZSVgdaDvtjk/Hqn+y08bBQcG13HP7oniHWF8lvfqa10Rtd0J1kOa/xQ+1zdm0T9X2hIojL+4DADkgjt2kl94aBkeHXL//jI5/eDeNhB9YH7P3A+mzWdW908Fk6t4QbR57rpxGz6AI1dhqAO7uf8HTgsCnHozNqItJIHdYywRGHf203jd8RAACu/ODRaXuyfYfxTaBHhEZISkNFs8KMQGkFHFJ5A5STRkjNUi5vNHA0L0ozxAj895beePmH1v96N42HXVgqe+hje5Jn/qtEegumUcLd1Knb9NAzMd0ApVw2SPbSS4GBPXxJmiG6CN53xYeP3LXbhu8aAHUc/tO1Hw3zLszrlbjOU1/WjqE7Bt1WLqIGl8DwMkir3If4ooNPXvHh9YMXyvhdBaCOZz+y5xI7XZ0UPx7B2z3V6yeH/BIS7fI+7tCyvqAUD+37o42NC2n4CzpO/M3e81radnFcHBfHxXFxXBwXx46MHS2Evvn4t/M6DqlJKSVAEZGUR4qI+j12frddVpe6fK5bAF1pgsZsNovrX33VtlaA7BgADz55QECyncjvFIeSlmwvlf1Q0hAY2h4AQ2AgKQED20l5kWQ/AStA1IWj1eBOUuu8IrQFZpJaYGp7JmkKTIFZOdamlCIi4rqrrzxnkJ4XgAefPNAAQ+xRWYU1sr2iPE9fJm8j5e+WyWtxl2wvpZSGtoe2B5IGthvKf0BUBgCVAR1lHWAxti0Gzoqx02LsRNIEmAAT22NJY2B8xufZdVdf2W0bgIeeOjiIiBVgRdIqMAJWgRXbK4gRpn6/YntU9suSVgpQy5KWy36pMGYYEU1hQg2FkNQVT89sLxo7Jq/tm9jekrRlewyMy+ctSZvF+C3bW0A9tpVS2rrmqivacwLgwScPNLZXJF1S9qvkRYgVgFWJFZvV+p3xKvnvlfLbxd+vSFq1PUoprdiuoCRyd7B6dAxsAb1h5fPmorH1GLApaQvYLIbXYxWQ+vnUta98eXw3AL7T+oAosTYr309LTM8KhQegBtzUuMa5sVKFjHnrs5VUvblUQmRI1oQaAm2NbdtTSZMFKm9J6vfF+PFiGJTnm6WUphExK+EzBSqbnlcXvqsGPPDEM5I0iohRSmmlhEGl96j869qIrAGjEvujYuQSsFxif6nsB+QOVMM8E1AWj4egYy5+04VwmBRwxotsKYBMFug/XvD+xPbW2YjiWWWBB5880EREk1Ia2K7GDSnCZ3sZWJI0LAZXLw/mrCEV2qe6wGIhBSKpK8Z35XNb2VHYN13IAJNFcApYM6B9PrpvG4DvNB566qAigpRzkKp3JTUl1Z35WSUTUBlQRnnn635JZRHFutWaoCvhVV+2c+0rX37etcH/Ax2nsCYhwTW+AAAAAElFTkSuQmCC"
+			}
+		}
+	}
+}
