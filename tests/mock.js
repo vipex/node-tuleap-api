@@ -5,13 +5,10 @@ var data = require('./mock-data.json');
 module.exports.createAPIMock = _createAPIMock;
 function _createAPIMock() {
 	var headers = {"Content-Type": "application/json"};
-	var server = nock(data.config.server + '/api');
-
-	// Base test
-	server.get('/').reply(200, {}, headers);
+	var server = nock(data.config.server);
 
 	// Tokens
-	server.post('/tokens').reply(function (u, r, cb) {
+	server.post('/api/tokens/').reply(function (u, r, cb) {
 		if (r.username && r.password) {
 			if (r.username === data.config.username && r.password === data.config.password) {
 				return cb(null, [200, data.endpoints.tokens.token, headers]);
@@ -22,11 +19,11 @@ function _createAPIMock() {
 			return cb(null, [400, data.endpoints.tokens['400'], headers]);
 		}
 	});
-	server.delete('/tokens').reply(function (u, r, cb) {
-		if (u.split('/').length > 1) {
-			return cb(null, [200, '', headers]);
+	server.delete('/api/tokens/').reply(function (u, r, cb) {
+		if (!u.split('/')[4]) {
+			return cb(null, [200, '']);
 		} else {
-			if (u.split('/')[1] === data.endpoints.tokens.token.token) {
+			if (u.split('/')[4] === data.endpoints.tokens.token.token) {
 				return cb(null, [200, '', headers]);
 			} else {
 				return cb(null, [500, data.endpoints.tokens['500'], headers]);
