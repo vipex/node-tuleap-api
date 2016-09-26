@@ -1,8 +1,8 @@
 {
 	"config": {
 		"server": "http://localhost",
-		"username": "luca.ravizzotti",
-		"password": "suicide$kW4d",
+		"username": "user01",
+		"password": "password01",
 		"strictSSL": false,
 		"auth": {
 			"user_id": 102,
