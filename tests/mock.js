@@ -31,6 +31,19 @@ function _createAPIMock() {
 		}
 	});
 
+	// Projects
+	server.get('/api/projects/').query(true).reply(200, data.endpoints.projects['projects']);
+	server.get('/api/projects/101').query(true).reply(200, data.endpoints.projects['projects/101']);
+	server.get('/api/projects/101/backlog').query(true).reply(200, data.endpoints.projects['projects/101/backlog']);
+	server.get('/api/projects/101/trackers').query(true).reply(200, data.endpoints.projects['projects/101/trackers']);
+	server.get('/api/projects/999').query(true).reply(404, data.endpoints.projects['projects/999']);
+	server.get('/api/projects/999/backlog').query(true).reply(404, data.endpoints.projects['projects/999/backlog']);
+	server.get('/api/projects/999/trackers').query(true).reply(404, data.endpoints.projects['projects/999/trackers']);
+	// Trackers
+	// TrackerReports
+	// Artifacts
+	// ArtifactFiles
+
 	return server;
 }
 
