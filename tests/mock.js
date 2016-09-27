@@ -40,6 +40,14 @@ function _createAPIMock() {
 	server.get('/api/projects/999/backlog').query(true).reply(404, data.endpoints.projects['projects/999/backlog']);
 	server.get('/api/projects/999/trackers').query(true).reply(404, data.endpoints.projects['projects/999/trackers']);
 	// Trackers
+	server.get('/api/trackers/12').query(true).reply(200, data.endpoints.trackers['trackers/12']);
+	server.get('/api/trackers/12/artifacts').query(true).reply(200, data.endpoints.trackers['trackers/12/artifacts']);
+	server.get('/api/trackers/12/parent_artifacts').query(true).reply(200, data.endpoints.trackers['trackers/12/parent_artifacts']);
+	server.get('/api/trackers/12/tracker_reports').query(true).reply(200, data.endpoints.trackers['trackers/12/tracker_reports']);
+	server.get('/api/trackers/99').query(true).reply(404, data.endpoints.trackers['trackers/99']);
+	server.get('/api/trackers/99/artifacts').query(true).reply(404, data.endpoints.trackers['trackers/99/artifacts']);
+	server.get('/api/trackers/99/parent_artifacts').query(true).reply(404, data.endpoints.trackers['trackers/99/parent_artifacts']);
+	server.get('/api/trackers/99/tracker_reports').query(true).reply(404, data.endpoints.trackers['trackers/99/tracker_reports']);
 	// TrackerReports
 	// Artifacts
 	// ArtifactFiles
