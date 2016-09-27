@@ -54,6 +54,14 @@ function _createAPIMock() {
 	server.get('/api/tracker_reports/999').query(true).reply(404, data.endpoints.trackerreports['tracker_reports/999']);
 	server.get('/api/tracker_reports/999/artifacts').query(true).reply(404, data.endpoints.trackerreports['tracker_reports/999/artifacts']);
 	// Artifacts
+	server.get('/api/artifacts/19').query(true).reply(200, data.endpoints.artifacts['artifacts/19']);
+	server.get('/api/artifacts/19/changesets').query(true).reply(200, data.endpoints.artifacts['artifacts/19/changesets']);
+	server.get('/api/artifacts/19/linked_artifacts').query(true).reply(200, data.endpoints.artifacts['artifacts/19/linked_artifacts']);
+	server.get('/api/artifacts/19/links').query(true).reply(200, data.endpoints.artifacts['artifacts/19/links']);
+	server.get('/api/artifacts/999').query(true).reply(404, data.endpoints.artifacts['artifacts/999']);
+	server.get('/api/artifacts/999/changesets').query(true).reply(404, data.endpoints.artifacts['artifacts/999/changesets']);
+	server.get('/api/artifacts/999/linked_artifacts').query(true).reply(404, data.endpoints.artifacts['artifacts/999/linked_artifacts']);
+	server.get('/api/artifacts/999/links').query(true).reply(404, data.endpoints.artifacts['artifacts/999/links']);
 	// ArtifactFiles
 
 	return server;
