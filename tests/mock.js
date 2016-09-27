@@ -63,6 +63,7 @@ function _createAPIMock() {
 	server.get('/api/artifacts/999/linked_artifacts').query(true).reply(404, data.endpoints.artifacts['artifacts/999/linked_artifacts']);
 	server.get('/api/artifacts/999/links').query(true).reply(404, data.endpoints.artifacts['artifacts/999/links']);
 	// ArtifactFiles
+	server.get('/api/artifact_files/244').query(true).reply(200, data.endpoints.artifactfiles['artifact_files/244']);
 
 	return server;
 }
