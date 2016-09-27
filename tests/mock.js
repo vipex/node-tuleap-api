@@ -49,6 +49,10 @@ function _createAPIMock() {
 	server.get('/api/trackers/99/parent_artifacts').query(true).reply(404, data.endpoints.trackers['trackers/99/parent_artifacts']);
 	server.get('/api/trackers/99/tracker_reports').query(true).reply(404, data.endpoints.trackers['trackers/99/tracker_reports']);
 	// TrackerReports
+	server.get('/api/tracker_reports/120').query(true).reply(200, data.endpoints.trackerreports['tracker_reports/120']);
+	server.get('/api/tracker_reports/120/artifacts').query(true).reply(200, data.endpoints.trackerreports['tracker_reports/120/artifacts']);
+	server.get('/api/tracker_reports/999').query(true).reply(404, data.endpoints.trackerreports['tracker_reports/999']);
+	server.get('/api/tracker_reports/999/artifacts').query(true).reply(404, data.endpoints.trackerreports['tracker_reports/999/artifacts']);
 	// Artifacts
 	// ArtifactFiles
 
