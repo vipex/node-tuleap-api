@@ -1,6 +1,6 @@
 {
   "name": "tuleap-api",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Unofficial Tuleap API NodeJs library.",
   "main": "./lib/index.js",
   "scripts": {
